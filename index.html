@@ -1350,7 +1350,7 @@
   
   <!-- FROM1 -->
   <div class="form1-overlay">
-    <form action="" class="form1" action='mail.php' method='post'>
+    <form action="" class="form1" method="post" action="/mail.php">
       <div class="form1-cross"></div>
       <div class="form1-title">Оставить заявку</div>
       <select name="service" required >
@@ -1362,9 +1362,9 @@
         <option value="mail-service">Почтовые службы</option>
         <option value="other">Другое</option>
       </select>
-      <input name="phone" type="phone" placeholder="Телефон" required>
-      <input name="email" type="mail" placeholder="E-mail" required>
-      <input name="name" type="name" placeholder="Имя" required>
+      <input name="phone" type="phone" placeholder="Телефон" onkeyup="checkParams()" required>
+      <input name="email" type="mail" placeholder="E-mail" onkeyup="checkParams()" required>
+      <input name="name" type="name" placeholder="Имя" onkeyup="checkParams()" required>
       <button class="form1-btn" type='submit'>Заказать</button>
     </form>
   </div>

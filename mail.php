@@ -1,35 +1,101 @@
-<meta http-equiv='refresh' content='3; url=https://jevgenii1337.github.io/test987123987123.github.io/index.html'>
-<meta charset="UTF-8" />
-<?php
+<?
 
-	if (isset($_POST['name']) &amp;&amp; $_POST['name'] != "")//если существует атрибут NAME и он не пустой то создаем переменную для отправки сообщения
-		$name = $_POST['name'];
-	else die ("Не заполнено поле \"Имя\"");//если же атрибут пустой или не существует то завершаем выполнение скрипта и выдаем ошибку пользователю.
+if ($_POST['who'] == 'robot') {
+    header('Refresh: 5; URL=localhost/new-project');
+    echo ('<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body><h1 style="color:red">Ошибка!</h1>
+    <p><b>Не отправлено,</b> так как вы являетесь роботом!<br>
+    Через 5 секунд вы вернетесь на главную страницу.</body></p>');
+} elseif ($_POST['mail'] == true) {
+    $mail = $_POST['mail'];
+    if ($_POST['name'] == true) {
+        $name = $_POST['name'];
+    } else {
+        $name = 'Отправитель';
+    };
 
-	if (isset($_POST['email']) &amp;&amp; $_POST['email'] != "") //тут все точно так же как и в предыдущем случае
-		$email = $_POST['email'];
-	else die ("Не заполнено поле \"Email\"");
+    if ($_POST['phone'] == true) {
+        $phone = $_POST['phone'];
+    } else {
+        $phone = 'Телефон';
+    };
 
-	if (isset($_POST['phone']) &amp;&amp; $_POST['phone'] != "") 
-		$phone = $_POST['phone'];
-	else die ("Не заполнено поле \"Тема\"");
+    // if ($_POST['company'] == true) {
+    //     $company = $_POST['company'];
+    // } else {
+    //     $company = 'Компания';
+    // };
 
-	if (isset($_POST['service']) &amp;&amp; $_POST['service'] != "") 
-		$service = $_POST['service'];
-	else die ("Не заполнено поле \"Сообщение\"");
-	 
+    // if ($_POST['site'] == 'http://') {
+    //     $site = $_POST['website'];
+    // } else {
+    //     $site = 'Сайт отправителя';
+    // };
 
+    // if ($_POST['product'] !== true) {
+    //     $product = $_POST['product'];
+    // } else {
+    //     $product = 'Продукт';
+    // };
 
-	$address = "lehamega2@yandex.ru";//адрес куда будет отсылаться сообщение для администратора
-	$mes  = "Имя: $name \n";	//в этих строчках мы заполняем текст сообщения. С помощью оператора .= мы просто дополняем текст в переменную
-	$mes .= "E-mail: $email \n";
- 	$mes .= "Номер телефона: $phone \n";
- 	$mes .= "Услуга: $service"; 
-	$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nFrom:$email");//собственно сам вызов функции отправки сообщения на сервере
+    if ($_POST['service'] == none) {
+        $ser = 'Услуга не выбрана';
+    } elseif ($_POST['service'] == 1) {
+        $ser = 'Услуга_';
+    } elseif ($_POST['service'] == 2) {
+        $ser = 'Услуга_';
+    } elseif ($_POST['service'] == 3) {
+        $ser = 'Услуга_';
+    } elseif ($_POST['service'] == 4) {
+        $ser = 'Услуга_';
+    } elseif ($_POST['service'] == 5) {
+        $ser = 'Услуга_';
+    // } elseif ($_POST['service'] == 6) {
+    //     $ser = 'Услуга_';
+    // } elseif ($_POST['service'] == 7) {
+    //     $ser = 'Услуга_';
+    } else {
+        $ser = 'Услуга_последняя';
+    }
 
-	if ($send) //проверяем, отправилось ли сообщение
-		echo "Сообщение отправлено успешно! Перейти на <a href='https://https://jevgenii1337.github.io/test987123987123.github.io/index.html/'>you-hands.ru</a>, если вас не перенаправило вручную.";
-	else 
-		echo "Ошибка, сообщение не отправлено! Возможно, проблемы на сервере";
-		 
+    // if ($_POST['message'] == true) {
+    //     $question = $_POST['message'];
+    // } else {
+    //     $message = 'Доп. информация';
+    // };
+
+    $mess = '
+    Отправитель: ' . $name . '
+    E-mail:' . $mail . '
+    Телефон:' . $phone . '
+    Необходимые услуги: ' . $ser . '
+
+    $email = 'lehamega2@yandex.ru';
+    $headers = "From: $email\r\nReply-To: $email" . "\r\n" . "MIME-Version: 1.0\r\nContent-type: text/plain; charset=utf-8";
+
+    mail('адрес_доставки_писем', 'Форма обратной связи', $mess, $headers);
+    header('Refresh: 5; URL=localhost/new-project');
+    echo ('<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body><h1>Ваше сообщение отправлено!</h1>
+    <p>Наши специалисты свяжутся с вами в ближайшее время.<br>
+    Через 5 секунд вы вернетесь на главную страницу.</body>');
+    $title = 'Сообщение отправелно';
+} else {
+    header('Refresh: 5; URL=localhost/new-project');
+    echo ('<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body><h1 class="red">Ошибка отправки сообщения!</h1><p>Проверьте правильность заполненных данных.<br>
+    Через 5 секунд вы вернетесь на главную страницу.');
+    $title = 'Ошибка!';
+
+};
+
+echo ('<br/><br/>');
+
 ?>
+
+<?
+include $_SERVER['DOCUMENT_ROOT'] . '/inc/inter';
+include $_SERVER['DOCUMENT_ROOT'] . '/inc/footer'; ?>
