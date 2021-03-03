@@ -1,0 +1,255 @@
+body
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  padding: 0
+  margin: 0
+.overflowh
+  overflow: hidden
+.slick-slide
+  outline: none
+// @media screen and (min-width: 1440px)
+// @media screen and (min-width: 1200px)
+// @media screen and (min-width: 992px)
+// @media screen and (min-width: 768px)
+// @media screen and (min-width: 576px)
+// @media screen and (max-width: 575px)
+.type-block
+  margin-bottom: 60px
+
+// MAIN
+.main
+  padding-top: 66px
+  width: 1140px
+  &-text
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 53px
+    &_item
+      width: 535px
+      color: #262626
+      font-family: "CeraPro-Regular"
+      font-size: 18px
+      font-weight: 400
+      text-align: left
+@media screen and (max-width: 1200px)
+  .main
+    width: 100%
+    &-text
+      align-items: center
+      flex-direction: column
+      &_item
+        width: 500px
+        &_1
+          margin-bottom: 30px
+    & .type-block
+      margin-bottom: 40px
+@media screen and (max-width: 575px)
+  .main
+    padding-top: 29px
+    & .type-block
+      margin-bottom: 16px
+    &-text
+      margin-bottom: 35px
+      &_item
+        width: 90%
+        font-size: 14px
+        &_1
+          margin-bottom: 15px
+// /MAIN
+
+// BOX
+.box
+  width: 100%
+  display: flex
+  justify-content: center
+  padding: 61px 0 61px 0
+  background-color: #262626
+  &-inner
+    width: 1140px
+  &-title
+    color: #ffffff
+    font-family: "CeraPro-Medium"
+    font-size: 18px
+    font-weight: 500
+    text-align: left
+    max-width: 1005px
+    margin-bottom: 40px
+  &-block
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    &_item
+      width: 247px
+      color: #ffffff
+      font-family: "CeraPro-Regular"
+      font-size: 18px
+      font-weight: 400
+      text-align: left
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        top: -10px
+        left: 0px
+        width: 35px
+        height: 3px
+        background-color: #a5d812
+      &:nth-child(-n+4)
+        margin-bottom: 37px
+@media screen and (max-width: 1200px)
+  .box
+    &-inner
+      width: 90%
+    &-title
+      text-align: center
+    &-block
+      justify-content: center
+      flex-direction: row
+      &_item
+        &:nth-child(-n+6)
+          margin-bottom: 37px
+
+@media screen and (max-width: 575px)
+  .box
+    padding: 40px 0 40px 0
+    &-inner
+    &-title
+      font-size: 14px
+    &-block
+      &_item
+        font-size: 14px
+        &:nth-child(-n+7)
+          margin-bottom: 37px
+// /BOX
+
+// PLUS
+.plus
+  width: 100%
+  padding-top: 79px
+  display: flex
+  justify-content: center
+  &-wrapper
+    width: 1140px
+  &-title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    margin-bottom: 31px
+  &-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    width: 360px
+    height: 247px
+    border-radius: 7px
+    border: 1px solid #d1d1d1
+    background-color: #ffffff
+    &_img
+      width: 58px
+      height: 58px
+      margin-left: 21px
+      margin-top: 21px
+      margin-bottom: 14px
+    &_text
+      color: #262626
+      font-family: "CeraPro-Regular"
+      font-size: 18px
+      font-weight: 400
+      text-align: left
+      margin-left: 21px
+      max-width: 311px
+@media screen and (max-width: 1200px)
+  .plus
+    &-wrapper
+      width: 90%
+    &-title
+    &-block
+      justify-content: center
+    &-item
+      &_1
+        margin-right: 40px
+      &_3
+        margin-top: 40px
+      &_img
+      &_text
+@media screen and (max-width: 848px)
+  .plus
+    &-block
+      flex-direction: column
+      align-items: center
+    &-item
+      margin-left: 0
+      margin-right: 0
+      &_1
+        margin-bottom: 30px
+      &_2
+        margin-bottom: 30px
+      &_3
+        margin-top: 0
+        margin-bottom: 0
+
+@media screen and (max-width: 575px)
+  .plus
+    padding-top: 40px
+    &-title
+      font-size: 20px
+      margin-bottom: 21px
+    &-item
+      max-width: 282px
+      border: none
+      height: auto
+      margin-bottom: 26px
+      &_3
+        margin-bottom: 0
+      &_img
+        width: 53px
+        height: 53px
+        margin-left: 0
+        margin-top: 0
+        margin-bottom: 11px
+      &_text
+        margin-left: 0
+        font-size: 14px
+// /PLUS
+
+// MAIN2
+.main2
+  padding-top: 72px
+  padding-bottom: 23px
+  width: 100%
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  align-items: center
+  & .type-block_subtitle
+    margin-bottom: 10px
+  & .type-block_text
+    margin-top: 0
+
+@media screen and (min-width: 1200px)
+  .main2
+    & .type-block_img_main1
+      margin-right: 110px
+    & .type-block_img_main2
+      margin-left: 20px
+      margin-right: -20px
+    & .type-block_img_main3
+      margin-right: 30px
+    & .type-block_img_main4
+      margin-left: 52px
+@media screen and (max-width: 575px)
+  .main2
+    padding-bottom: 0px
+    & .type-block_img
+      width: 70%
+      height: 70%
+    & .type-block_img_1
+      display: inline-block
+// /MAIN2

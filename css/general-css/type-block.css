@@ -1,0 +1,128 @@
+.type-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.type-block_2 .type-block_img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.type-block_2 .type-block_inner {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.type-block_title {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.type-block_subtitle {
+  color: #262626;
+  font-family: "CeraPro-Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.type-block_text {
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.type-block_inner {
+  width: 550px;
+}
+
+.type-block_img_2 {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .type-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .type-block_inner {
+    width: 500px;
+  }
+  .type-block_img {
+    margin-bottom: 40px;
+  }
+  .type-block_2 .type-block_img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .type-block_2 .type-block_inner {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .type-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 16px;
+  }
+  .type-block_inner {
+    width: 90%;
+  }
+  .type-block_img {
+    margin-bottom: 30px;
+  }
+  .type-block_img_1 {
+    display: none;
+  }
+  .type-block_img_2 {
+    display: inline-block;
+  }
+  .type-block_title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .type-block_subtitle {
+    font-size: 14px;
+  }
+  .type-block_text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

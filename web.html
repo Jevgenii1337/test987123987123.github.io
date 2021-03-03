@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script> 
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/general-css/header.css">
+  <link rel="stylesheet" href="css/general-css/footer.css">
+  <link rel="stylesheet" href="css/general-css/project.css">
+  <link rel="stylesheet" href="css/general-css/form1.css">
+  <link rel="stylesheet" href="css/general-css/type-block.css">
+  <link rel="stylesheet" href="css/general-css/call.css">
+  <!-- <link rel="stylesheet" href="css/general-css/form1.css"> -->
+  <link rel="stylesheet" href="css/web-css/style.css">
+</head>
+<body>
+
+
+   <!-- Header -->
+   <div class="header">
+    <div class="header-menu">
+      <img src="img/general/header/menu.svg" alt="menu-icon" class="header-menu_menu">
+      <img src="img/general/header/cancel2.svg" alt="menu-icon" class="header-menu_cancel">
+    </div>
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="img/general/header/LogoB2B.PNG" alt="logo">
+      </a>
+    </div>
+    <div class="header-media">
+      <a href="tel:+78000000000">
+        <div class="header-media_mobicon header-media_mobicon_phone"><img src="img/general/header/phone3.svg" alt="icon-phone"></div>
+      </a>
+      <a href="mailto:web@b2bconnect.ru">
+        <div class="header-media_mobicon header-media_mobicon_mail"><img src="img/general/header/mail3.svg" alt="icon-phone"></div>
+      </a>
+      <a href="tel:+78000000000" class="header-media_block_a">
+        <div class="header-media_block header-media_block1">
+          <div class="header-media_icon header-media_icon_phone"><img src="img/general/header/phone3.svg" alt="icon-phone"></div>
+          8800-000-00-00
+        </div>
+      </a>
+      <a href="mailto:web@b2bconnect.ru" class="header-media_block_a">
+        <div class="header-media_block header-media_block2">
+          <div class="header-media_icon header-media_icon_mail"><img src="img/general/header/mail3.svg" alt="icon-mail"></div>
+          web@b2bconnect.ru
+        </div>
+      </a>
+      <a href="#"><div class="header-media_icon header-media_icon_vk"><img src="img/general/header/vk3.svg" alt="icon-vk"></div></a>
+      <a href="#"><div class="header-media_icon header-media_icon_ok"><img src="img/general/header/ok3.svg" alt="icon-ok"></div></a>
+      <a href="#"><div class="header-media_icon header-media_icon_fb"><img src="img/general/header/fb3.svg" alt="icon-fb"></div></a>
+    </div>
+  </div>
+  <nav class="header-bar">
+    <div class="header-bar_inner">
+      <div class="header-bar_icon_block">
+        <a href="#"><div class="header-bar_icon header-bar_icon_vk">
+          <img src="img/general/header/vk3.svg" alt="icon-vk">
+        </div></a>
+        <a href="#"><div class="header-bar_icon header-bar_icon_ok">
+          <img src="img/general/header/ok3.svg" alt="icon-ok">
+        </div></a>
+        <a href="#"><div class="header-bar_icon header-bar_icon_fb">
+          <img src="img/general/header/fb3.svg" alt="icon-fb">
+        </div></a>
+      </div>
+      <ul class="header-bar_ul">
+        <li class="header-bar_li"><a href="mobapp.html">Мобильное приложение</a></li>
+        <li class="header-bar_li"><a href="web.html">WEB-сервис</a></li>
+        <li class="header-bar_li"><a href="solution.html">Корпоративное решение</a></li>
+        <li class="header-bar_li header-bar_li_spec">Удостоверяющий центр
+          <div class="header-bar_li_more"></div>
+          <ul class="header-bar_in_ul">
+            <li class="header-bar_in_li"><a href="certifying-center.html/#1">О центре</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#2">Информация об ЭЦП</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#3">Заказать ЭЦП</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#4">Учебный центр</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#5">Документация </a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#6">Сертификаты</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#7">Инструкции</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#8">О программном обеспечении</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#9">Партнеры</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#10">Участие в тендерах</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html/#11">Контакты</a></li>
+          </ul>
+        </li>
+        <li class="header-bar_li"><a href="mail-service.html">Почтовые службы</a></li>
+      </ul>
+      <button class="header-bar_btn">Заказать</button>
+    </div>
+  </nav>
+  <script>
+    let menuBtn = document.querySelector('.header-menu_menu');
+    let cancelBtn = document.querySelector('.header-menu_cancel');
+    let menu = document.querySelector('.header-bar');
+    let listBtn = document.querySelector('.header-bar_li_more');
+    let list = document.querySelector('.header-bar_in_ul')
+    let listSpec = document.querySelector('.header-bar_li_spec')
+
+    menuBtn.addEventListener("click", openMenu);
+    cancelBtn.addEventListener("click", closeMenu);
+    listSpec.addEventListener("click", listToggle);
+
+    function listToggle() {
+      listBtn.classList.toggle("header-bar_li_more_open");
+      if(listBtn.classList.contains('header-bar_li_more_open')) {
+        list.classList.remove('displaynone575');
+        list.classList.add('displayflex575');
+      } else {
+        list.classList.remove('displayflex575')
+        list.classList.add('displaynone575')
+      }
+    }
+    function openMenu(){
+      menuBtn.classList.remove("displayblock575");
+      menuBtn.classList.add("displaynone575");
+      cancelBtn.classList.remove("displaynone575");
+      cancelBtn.classList.add("displayblock575");
+      menu.classList.remove("displaynone575");
+      menu.classList.add("displayblock575");
+    }
+    function closeMenu(){
+      menuBtn.classList.remove("displaynone575");
+      menuBtn.classList.add("displayblock575");
+      cancelBtn.classList.remove("displayblock575");
+      cancelBtn.classList.add("displaynone575");
+      menu.classList.remove("displayblock575");
+      menu.classList.add("displaynone575");
+    }
+  </script>
+  <!-- /Header -->
+
+  <!-- MAIN1 -->
+  <div class="main1">
+    <div class="type-block type-block_1">
+      <img src="img/web/Compleks.png" alt="pic" class="type-block_img type-block_img_1 type-block_img_main11">
+      <div class="type-block_inner">
+        <div class="type-block_title">КОМПЛЕКСНЫЕ B2B РЕШЕНИЯ</div>
+        <div class="type-block_text">Мы создаем комплексные веб-сервисы с возможностью интеграции с мобильными приложениями, CRM и ERP системами, e-commerce. Предлагаем все типы услуг, включая поддержку, внедрение новых модулей, интеграцию. Программирование, верстка, дизайн (в том числе отрисовка баннеров), DevOps и консалтинг.
+          Интеграции, включая создание API — также включены (прочтите о нашем опыте в этом).</div>
+        <div class="type-block_text">Выделяем персонального менеджера проекта, аналитика и команду под проект. Пишем техническое задание по сложным задачам, чтобы избежать неоправданных ожиданий и просрочек. Предоставляем детальную отчетность каждый месяц. Индивидуальные тарифы могут быть по предоплате - абонентская плата или депозит; и постоплата.</div>
+      </div>
+    </div> <!-- end --> 
+    <div class="type-block type-block_2">
+      <img src="img/web/Zakup.png" alt="pic" class="type-block_img type-block_img_1 type-block_img_main12">
+      <div class="type-block_inner">
+        <div class="type-block_title">ТОРГОВО-ЗАКУПОЧНЫЕ СИСТЕМЫ</div>
+        <div class="type-block_text">Ваша электронная торговая площадка или торгово-закупочный портал предприятия, специализированные под индивидуальный профиль, позволит реализовать систему торговли в интернете. Эти системы, автоматизирующие бизнес-процессы, процедуры закупок и оптовых продаж в соответствии с требованиями отрасли необходимы как оптовым компаниям, так и крупным предприятиям.
+          Мы предлагаем к внедрению современные ИТ-решения для бизнеса на базе собственных разработок. Система позволяет использования средств защищенного электронного документооборота, разработки и эксплуатации высоконагруженных веб-приложений, синхронизации разветвленных структур данных любой сложности с системами сторонних разработчиков и пользователей. Многолетнее совершенствование нашей системы позволило добиться сегодня полной масштабируемости, гибкости, возможности индивидуальной кастомизации под нужды каждого клиента и способности выдерживать большие нагрузки.</div>
+      </div>
+    </div> <!-- end --> 
+    <div class="type-block type-block_1">
+      <img src="img/web/СМS.png"" alt="pic" class="type-block_img type-block_img_1 type-block_img_main13">
+      <div class="type-block_inner">
+        <div class="type-block_title">CMS СИСТЕМЫСИСТЕМЫ</div>
+        <div class="type-block_text">Когда приходится разрабатывать дополнительные модули под специфические функции в какой-либо из стандартных систем управления содержимым сайта, не всегда оказывается возможным добиться требуемого уровня удобства использования этого инструмента. Порой и вовсе становится крайне затруднительной реализация задания из-за ограничений «стоковой» CMS. Фирменная CMS дает пользователю такие уникальные преимущества, как дополнительные удобства, функционал и безопасность. Мы реализуем проекты заказчиков на основе принципов модульности, расширяемости и простоты в управлении. Для ее масштабирования пользователю не приходится повторно обращаться к разработчику и не требуются специальные знания программирования, достаточно уметь работать с офисными программами. Ваша CMS не будет содержать ненужных модулей и отсутствие лишних элементов упростит и ускорит работу с контентом сайта.</div>
+      </div>
+    </div> <!-- end --> 
+  </div>
+  <!-- /MAIN1 -->
+
+  <!-- PROXY -->
+  <div class="proxy">
+    <div class="proxy-wrapper">
+      <div class="proxy-title">СЕТЕВЫЕ РЕШЕНИЯ, ПРОКСИ СЕРВЕРЫ</div>
+      <div class="proxy-block">
+        <div class="proxy-item proxy-item_1">
+          <div class="proxy-item_title">Аудит</div>
+          <div class="proxy-item_text">Обследования следующих подсистем и компонентов IT-инфраструктуры: сети хранения и передачи данных; системы хранения и обработки данных; вычислительные комплексы и виртуальная инфраструктура; системы информационной безопасности; пользовательские рабочие станции; программного обеспечения и корпоративные сервисы.</div>
+        </div>
+        <div class="proxy-item proxy-item_2">
+          <div class="proxy-item_title">Проектирование</div>
+          <div class="proxy-item_text">Разработкой комплексных проектных решений в области создания, модернизации и интеграции в единую корпоративную IT-инфраструктуру таких систем, как: Сети передачи и хранения данных; Системы хранения данных и системы резервного копирования; Системы информационной безопасности; Вычислительные комплексы; Системы унифицированных коммуникаций; Инженерная инфраструктура.</div>
+        </div>
+        <div class="proxy-item proxy-item_3">
+          <div class="proxy-item_title">Внедрение</div>
+          <div class="proxy-item_text">На этапе внедрения IT-решения проводятся все необходимые работы, предусмотренные техническим заданием или техническим проектом, в случае сложных систем: закупка необходимого оборудования и программного обеспечения; сборка и первичная настройка оборудования; монтажные и пусконаладочные работы на объекте Заказчика; проверка функционирования и ввод в эксплуатацию; техническое сопровождение; консультация персонала Заказчика по внедряемым системам.</div>
+        </div>
+        <div class="proxy-item proxy-item_4">
+          <div class="proxy-item_title">Документирование</div>
+          <div class="proxy-item_text">Разработка новой и актуализации существующей технической документации, как для комплексных проектных решений, охватывающих весь жизненный цикл IТ-системы, так и для определенной стадии создания частного проектного решения на подсистему или составную часть общей IT-инфраструктуры Заказчика</div>
+        </div>
+        <div class="proxy-item proxy-item_5">
+          <div class="proxy-item_title">Консалтинг</div>
+          <div class="proxy-item_text">Формирования чёткой независимой экспертной оценки эффективности использования информационных сетей в компании.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /PROXY -->
+
+
+  <!-- MAIN2 -->
+  <div class="main2">
+    <div class="type-block type-block_1">
+      <img src="img/web/Upravlen.png" alt="pic" class="type-block_img type-block_img_1 type-block_img_main21">
+      <div class="type-block_inner">
+        <div class="type-block_title">УПРАВЛЕНИЕ ПРОЕКТАМИ</div>
+        <div class="type-block_text">Мы успешно реализовали множество комплексных IT проектов, включающих центр обработки данных, построение сетевой инфраструктуры. Проведем анализ эффективности существующей системы и процессов Заказчика и поможем составить техническое задание на проектирование со всесторонним финансовым и бизнес обоснованием. Разработаем для Вас план совместной реализации проекта и согласуем его со всеми участниками.</div>
+      </div>
+    </div> <!-- end --> 
+    <div class="type-block type-block_2">
+      <img src="img/web/Po.png" alt="pic" class="type-block_img type-block_img_1 type-block_img_main22">
+      <div class="type-block_inner">
+        <div class="type-block_title">ПОСТАВКА ОБОРУДОВАНИЯ И ПО</div>
+        <div class="type-block_text">Осуществим подбор необходимого оборудования и программного обеспечения в соответствии с задачами, требованиями и возможностями Заказчика. Проведем профессиональные консультации, как телефонные, так и личные, еще до подробной проработки проекта, как в области оборудования, так и в области ПО. Мы ответственно относимся к предоставляемым нами услугам и  поэтому осуществляем поставки только оборудования и программного обеспечения, имеющего все необходимые сертификаты и лицензии. Наш опыт позволяет дать экспертную оценку, выбрать птимальное соотношение цены и необходимого функционала. Проводим обязательное предпродажное тестирование.</div>
+      </div>
+    </div> <!-- end --> 
+    <div class="type-block type-block_1 type-block_23">
+      <img src="img/web/servise.png"" alt="pic" class="type-block_img type-block_img_1 type-block_img_main23">
+      <div class="type-block_inner">
+        <div class="type-block_title">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</div>
+        <div class="type-block_text">Оказываем услуги по сервисному обслуживанию IТ-систем. Берем на себя решение проблем с эксплуатацией оборудования и информационных систем, осуществляем поддержку пользователей этих ресурсов. Работа может осуществляться как из офиса нашей компании с помощью средств удалённого доступа с необходимыми выездами на территорию заказчика, так и с присутствием технического персонала службы поддержки на объектах заказчика, вплоть до полного рабочего дня у заказчика на постоянной основе. Взаимодействие с персоналом заказчика может базироваться на основе применения систем Service desk как заказчика, так и нашей компании. Специалисты компании могут произвести для заказчиков расчёты схем оптимальной аппаратной поддержки оборудования, включая необходимый резерв. С помощью систем мониторинга специалисты компании могут обеспечить ранее оповещение об отказах аппаратных систем, в том числе и о возможных предполагаемых отказах. При автоматизации процессов, составляющих основу работы IТ-структуры, главная задача — это применение и адаптация отраслевых стандартов и лучших практик. Применение систем Service desk в нашей компании и в компаниях заказчиков делает возможным формализовать и автоматизировать процессы, избавляя от многих трудоемких операций, выполняемых вручную, таких, как инвентаризация, учет изменений, настройка и поддержка. Опыт наших сотрудников позволяет помогать в этом нашим заказчикам. Для взаимодействия с заказчиком в компании работает диспетчерская служба. Сотрудники диспетчерской принимают заявки от представителей заказчика по телефону и по e-mail, регистрируют их в системе Service desk, назначают на исполнение сотрудникам компании и подрядчикам заказчиков, отслеживают выполнение работ. Выделенным сотрудникам заказчиков может быть предоставлен прямой доступ в систему Service desk компании для работы со своими заявками, для получения отчётов по происходившим событиям. Система Service desk позволяет контролировать соблюдение Соглашений об уровне сервиса и предоставлять заказчикам полную отчётность о проводимых работах.</div>
+      </div>
+    </div> <!-- end --> 
+  </div>
+  <!-- /MAIN2 -->
+
+  <!-- SERVICE -->
+  <div class="service">
+    <div class="service-wrapper">
+      <div class="service-title service-title_1">ПРОКСИ-СЕРВЕРЫ</div>
+      <div class="service-text service-text_1">Обеспечивают конфиденциальность пользователей для внешних ресурсов, неограниченное количество подключений и потоков к web-рессурсу. Позволит выбрать местоположение (геотергетинг), добиться максимальной производительности при исследовании рынка, парсинге сайтов, мульти-аккаунтинге.</div>
+      <div class="service-title service-title_2">ХОСТИНГОВЫЕ УСЛУГИ</div>
+      <div class="service-text service-text_2">Это услуга, которая необходима для осуществления функционирования и нахождения вашего сайта в интернете. Мы предоставляем ресурсы на серверах, где будут надежно храниться все необходимые данные для правильного и бесперебойного функционирования сайта. Предназначенные этого сервера работают без перерывов, обеспечивая круглосуточную обработку обращений к Интернет-ресурсу.</div>
+      <div class="service-block">
+        <div class="service-block_number"><div class="service-block_number_green">01</div> Виртуальный хостинг</div>
+        <div class="service-block_number"><div class="service-block_number_green">02</div> Виртуальный хостинг (VPS)</div>
+        <div class="service-block_number"><div class="service-block_number_green">03</div> Выделенные сервера</div>
+      </div>
+      <div class="type-block type-block_1">
+        <img src="img/web/mashtab.png" alt="pic" class="type-block_img type-block_img_1 type-block_img_main11">
+        <div class="type-block_inner">
+          <div class="type-block_title">Масштабируемость</div>
+          <div class="type-block_text">Для проектов любого масштаба, от сайта-одностаничника до IT-инфраструктуры крупной компании. При выборе виртуального хостинга, когда ваш проект потребует большего объема ресурсов, Вы будете готовы переехать на VPS или даже арендовать у нас выделенный сервер.</div>
+          <div class="type-block_text">Техническая поддержка всегда готова оперативно решить задачи по Вашим обращениям. Поможем перенести ваши сайты к нам.</div>
+          <div class="type-block_text type-block_text_last">Географически все серверы расположения в Москве. Быстрые SSD-диски с аппаратным RAID, оптимизированные версии nginx, MySQL и PHP для ускорения загрузки сайта. Ежедневное резервное копирование файлов, размещенных на хостинге. Мониторинг аномалий базовой системой защиты от DDOS-атак. Платная опция индивидуальной защиты.</div>
+        </div>
+      </div> <!-- end --> 
+    </div>
+  </div>
+  <!-- /SERVICE -->
+
+  <!-- PROJECT -->
+  <div class="project" id='project'>
+    <div class="project-title">ПОРТФОЛИФО ПРОЕКТОВ</div>
+    <div class="project-nav">
+      <div class="project-nav_item project-nav_item_1" data-slide="2">Мобильное приложение</div>
+      <div class="project-nav_item project-nav_item_2" data-slide="3">Онлайн опросы</div>
+      <div class="project-nav_item project-nav_item_3" data-slide="4">Email рассылки</div>
+      <div class="project-nav_item project-nav_item_4" data-slide="5">Маркетинговые исследования</div>
+      <div class="project-nav_item project-nav_item_5" data-slide="8">Система поиска закупок</div>
+      <div class="project-nav_item project-nav_item_6" data-slide="6">Торгово-закупочная система</div>
+      <div class="project-nav_item project-nav_item_7" data-slide="7">Аналитика рынков</div>
+      <div class="project-nav_item project-nav_item_8" data-slide="10">ERP Тендерный рынок</div>
+      <div class="project-nav_item project-nav_item_9" data-slide="11">Удостоверяющий центр</div>
+    </div>
+    <div class="project-wrapper">
+      <div class="project-slider">
+
+        <div class="project-slide project-slide_1">
+          <div class="project-slide_img">
+            <img src="img/general/project/DIGITENDER.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/DIGITENDER.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title">
+              <div class="project-slide_title_bold">DIGITENDER</div> – Электронные закупки
+            </div>
+            <div class="project-slide_text">
+              Запустите технологичный сайт, интегрированный в бухгалтерию.
+            </div>
+            <div class="project-slide_subtext">
+              <a href="" class="project-slide_subtext_blue">Смотреть видео</a> демонстрацию.
+            </div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Система фильтров</div>
+              <div class="project-slide_li">Работа и избранным</div>
+              <div class="project-slide_li">Передача в работу специалистам</div>
+              <div class="project-slide_li">Модуль обратной связи / чата со специалистами</div>
+              <div class="project-slide_li">Передача файлов</div>
+              <div class="project-slide_li">Этапы участия в торгах</div>
+              <div class="project-slide_li">Push-уведомления на экране</div>
+              <div class="project-slide_li">ПК версия для менеджеров, управляющих системой с системой аналитики, статистики, контроля заказов, обратной связи и т.д.</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div class="project-slide project-slide_2">
+          <div class="project-slide_img">
+            <img src="img/general/project/AZU.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/AZU.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title">ФОРУМ АУЗ – Тендерный рынок</div>
+            <div class="project-slide_text">Мобильное приложение для участников ежегодного мероприятия на тендерном рынке.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Кабинет и личная карточка участника</div>
+              <div class="project-slide_li">Коммуникации участников внутри приложения</div>
+              <div class="project-slide_li">Информация о мероприятии</div>
+              <div class="project-slide_li">Новости мероприятия</div>
+              <div class="project-slide_li">Фотоальбом</div>
+              <div class="project-slide_li">Этапы участия в торгах</div>
+              <div class="project-slide_li">Видеоролики</div>
+              <div class="project-slide_li">Схема проезда</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="project-slide project-slide_3">
+          <div class="project-slide_img">
+            <img src="img/general/project/OPROS.RU.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/OPROS.RU.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">OPROS.RU</div> – Опросы аудитории</div>
+            <div class="project-slide_text">Онлайн-сервис, позволяющий настраивать и проводить многоуровневые, профессиональные опросы по различным типам целевой аудитории. Новые технологии проведения опросов. Платформа Opros.ru позволяет провести анкетирование и в режиме онлайн отслеживать результаты и строить отчеты. С помощью конструктора создавайте анкеты и проводите опросы по базе экспертов OPROS.RU. Результаты – в режиме онлайн в рабочем кабинете. Оценки рынка и тенденций его развития. Сформируйте анкету на Opros.ru и узнайте нужные вам данные о рынке и новых тенденциях.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Модуль готовых шаблонов</div>
+              <div class="project-slide_li">Система аналитики</div>
+              <div class="project-slide_li">Тонкая настройка опросника</div>
+              <div class="project-slide_li">Административная панель</div>
+              <div class="project-slide_li">Система вывода статистики</div>
+              <div class="project-slide_li">Сайт сервиса</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="project-slide project-slide_4">
+          <div class="project-slide_img">
+            <img src="img/general/project/SMARTMAIL.SU.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/SMARTMAIL.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">SMARTMAIL.SU</div> – Email рассылки</div>
+            <div class="project-slide_text">Онлайн-сервис, позволяющий настраивать и проводить массовые email рассылки на миллионы адресов.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Конструктор email письма</div>
+              <div class="project-slide_li">Модуль выгрузки html-шаблонов</div>
+              <div class="project-slide_li">Модуль баз данных</div>
+              <div class="project-slide_li">Модуль отправки писем по расписанию</div>
+              <div class="project-slide_li">Серверные модули рассылки</div>
+              <div class="project-slide_li">Проверка писем на спам</div>
+              <div class="project-slide_li">Серверные антиспам-настройки</div>
+              <div class="project-slide_li">Интеграция с сайтами и соцсетями</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="project-slide project-slide_5">
+          <div class="project-slide_img">
+            <img src="img/general/project/MEGARESEARCH.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/MEGARESEARCH.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">MEGARESEARCH.RU</div>  – Маркетинговые исследования </div>
+            <div class="project-slide_text">Интернет-каталог, позволяющий найти и приобрести готовое маркетинговое исследование по выбранному рынку, либо заказать разработку исследования.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">База данных исследований и маркетинговых планов</div>
+              <div class="project-slide_li">Модуль каталога с описанием и готовыми исследованиями</div>
+              <div class="project-slide_li">Модуль статей и обзоров</div>
+              <div class="project-slide_li">Модуль заказа исследований</div>
+              <div class="project-slide_li">Модуль клиентов с описанием и отзывами </div>
+              <div class="project-slide_li">Модуль обратной связи</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="project-slide project-slide_6">
+          <div class="project-slide_img">
+            <img src="img/general/project/ZAKUPKI.RU.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/ZAKUPKI.RU.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">ZAKUPKI.RU</div> – Торгово-закупочная деятельность</div>
+            <div class="project-slide_text">Торгово-закупочная система, позволяющая найти выгодные предложения от поставщиков товаров и услуг.
+              Торгово-закупочная система представляет заявки только от конечного коммерческого заказчика. В ней полностью отсутствуют государственные заказы любого формата, нет запросов ни по 44 ни по 223 ФЗ. Система предназначена для поиска поставщиков и проведения электронных торгов с целью получения наиболее выгодного предложения по заявкам компаний - покупателей.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Парсер по 7000 источников</div>
+              <div class="project-slide_li">База данных по всем государственным и коммерческим электронным закупкам, с ежедневным обновлением</div>
+              <div class="project-slide_li">Архив проведенных закупок за 20 лет</div>
+              <div class="project-slide_li">Система тендерной документации</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="project-slide project-slide_7">
+          <div class="project-slide_img">
+            <img src="img/general/project/ANALYTIC-CONTRACT-CENTER.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/ANALYTIC-CONTRACT-CENTER.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">ANALYTIC.CONTRACT-CENTER.RU</div> – Электронные закупки</div>
+            <div class="project-slide_text">Система аналитики государственных и коммерческих закупок по заданным параметрам, с визуализацией готовых результатов.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Парсер по источникам аналитики</div>
+              <div class="project-slide_li">Модуль регистрации с личным кабинетом</div>
+              <div class="project-slide_li">Модуль аналитики</div>
+              <div class="project-slide_li">Модуль визуализации готовых результатов</div>
+              <div class="project-slide_li">Модуль выгрузки файлов</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="project-slide project-slide_8">
+          <div class="project-slide_img">
+            <img src="img/general/project/CONTRACT-CENTER.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/CONTRACT-CENTER.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">CONTRACT-CENTER.RU</div> – Тендерный рынок</div>
+            <div class="project-slide_text">Система поиска и работы с государственными и коммерческими электронными закупками.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Парсер по 7000 источников</div>
+              <div class="project-slide_li">Интеграция личного кабинета пользователя в бухгалтерию</div>
+              <div class="project-slide_li">Модуль выгрузки данных по 1 миллиону закупок</div>
+              <div class="project-slide_li">Модуль работы с избранным</div>
+              <div class="project-slide_li">Модуль обратной связи</div>
+              <div class="project-slide_li">База данных проведенных тендеров за 20 лет</div>
+              <div class="project-slide_li">Система отзывов клиентов </div>
+              <div class="project-slide_li">Модуль регистрации с личным кабинетом и привязкой кабинета к карточкам клиентов в корпоративной CRM</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="project-slide project-slide_9">
+          <div class="project-slide_img">
+            <img src="img/general/project/CMS.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/CMS.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">CMS-СИСТЕМА</div>  – Электронные торги</div>
+            <div class="project-slide_text">CMS-система, позволяющая работать с базой данных пользователей.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Структура и дизайн системы</div>
+              <div class="project-slide_li">Интеграция в действующую базу данных</div>
+              <div class="project-slide_li">Модуль выгрузки данных по 1 миллиону закупок</div>
+              <div class="project-slide_li">Модуль выгрузки результатов</div>
+              <div class="project-slide_li">Административная панель</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="project-slide project-slide_10">
+          <div class="project-slide_img">
+            <img src="img/general/project/ERP.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/ERP.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">ERP «MODERATOR»</div>  – Электронные торги</div>
+            <div class="project-slide_text">Система управления ресурсами и производством компании, осуществляющая консалтинговые услуги для участников электронных закупок. Благодаря этому тысячи юридических лиц страны успешно прошли процедуры торгов от формирования структурированных запросов к базе данных, объединяющей все значительные ЭТП до заключения договора.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Объем переносимых данных насчитывает несколько террабайт</div>
+              <div class="project-slide_li">Создан API</div>
+              <div class="project-slide_li">Система интегрирована с CRM системой отделов продаж и мобильным приложением</div>
+              <div class="project-slide_li">Разработаны и внедряются решения для внутренних коммуникаций</div>
+              <div class="project-slide_li">Автоматизированная информационная система включает в себя личные кабинеты пользователей услуг компании</div>
+              <div class="project-slide_li">Формируются платежные документы, построен электронный документооборот</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="project-slide project-slide_11">
+          <div class="project-slide_img">
+            <img src="img/general/project/B2B-CONNECT.png" alt="project-slider-picture">
+            <img src="img/general/project/mob/B2B-CONNECT.png" alt="project-slider-picture">
+          </div>
+          <div class="project-slide_block">
+            <div class="project-slide_title"><div class="project-slide_title_bold">B2B-CONNECT</div>  – Электронные подписи</div>
+            <div class="project-slide_text">Удостоверяющий центр, занимающийся оформлением и выдачей электронных цифровых подписей. Работает по лицензии ФСБ.</div>
+            <div class="project-slide_ul">
+              <div class="project-slide_li">Модуль записи ЭЦП</div>
+              <div class="project-slide_li">Модуль онлайн-оформления документации</div>
+              <div class="project-slide_li">Модуль обмена документами</div>
+              <div class="project-slide_li">Модуль онлайн обновления ЭЦП</div>
+              <div class="project-slide_li">Реестр владельцев ЭЦП</div>
+            </div>
+            <button class="project-slide_btn">Заказать аналогичное решение</button>
+          </div>
+        </div>
+        <!-- 11 -->
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+    $('.project-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true, 
+    arrows: true,
+    responsive: [
+    {
+    breakpoint: 1300,
+    settings: {
+    adaptiveHeight: true 
+    
+    }
+  }
+  ]
+    });
+  });
+  $('.project-nav_item').click(function(e) {
+   e.preventDefault();
+   var slideno = $(this).data('slide');
+   $('.project-slider').slick('slickGoTo', slideno - 1);
+  });
+
+  // $(function(){
+  //   $(".project-nav_item").click(function() {
+  //     var focused = $('.project-slide .slick-current');
+  //     var focused2 = focused.attr('data-slick-index')
+  //     // .attr('data-slick-index');
+  //     console.log(focused2);
+  //   });
+  // });
+  </script>
+  <!-- /PROJECT -->
+
+
+  <!-- CALL -->
+  <div class="call">
+    <button class="call-btn">Позвоните мне</button>
+  </div>
+  <!-- /CALL -->
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-inner_block footer-inner_block_1">
+        <div class="footer-inner_block_logo"><a href="#"><img src="img/general/footer/LogoB2B2.png" alt="footer-logo"></a></div>
+        <div class="footer-inner_block_phone"><a href="#">8800-000-00-00</a></div>
+        <div class="footer-inner_block_mail"><a href="#">web@b2bconnect.ru</a></div>
+        <div class="footer-inner_block_address">Россия, Москва, 8-я улица Текстильщиков, 11</div>
+        <div class="footer-inner_block_media">
+          <a href="#"><div class="footer-inner_block_media_icon footer-inner_block_media_icon_vk" ></div></a>
+          <a href="#"><div class="footer-inner_block_media_icon footer-inner_block_media_icon_ok" ></div></a>
+          <a href="#"><div class="footer-inner_block_media_icon footer-inner_block_media_icon_fb" ></div></a>
+        </div>
+      </div>
+      <div class="footer-inner_block footer-inner_block_2">
+        <div class="footer-inner_title footer-inner_title_1">Портфолио проектов<div class="footer-inner_title_icon footer-inner_title_icon_1"></div></div>
+        <ul class="footer-inner_ul footer-inner_ul_1">
+          <li class="footer-inner_li"><a href="#project">Мобильное приложение</a></li>
+          <li class="footer-inner_li"><a href="#project">Онлайн опросы</a></li>
+          <li class="footer-inner_li"><a href="#project">Email рассылки</a></li>
+          <li class="footer-inner_li"><a href="#project">Маркетинговые исследования</a></li>
+          <li class="footer-inner_li"><a href="#project">Система поиска закупок</a></li>
+          <li class="footer-inner_li"><a href="#project">Торгово-закупочная система</a></li>
+          <li class="footer-inner_li"><a href="#project">Аналитика рынков</a></li>
+          <li class="footer-inner_li"><a href="#project">ERP Тендерный рынок</a></li>
+          <li class="footer-inner_li"><a href="#project">Удостоверяющий центр</a></li>
+        </ul>
+      </div>
+      <div class="footer-inner_block footer-inner_block_3">
+        <div class="footer-inner_title footer-inner_title_2">Наши направления<div class="footer-inner_title_icon footer-inner_title_icon_2"></div></div>
+        <ul class="footer-inner_ul footer-inner_ul_2">
+          <li class="footer-inner_li"><a href="mobapp.html">Мобильные приложения</a></li>
+          <li class="footer-inner_li"><a href="web.html">Web-сервисы</a></li>
+          <li class="footer-inner_li"><a href="solution.html">Корпоративные решения</a></li>
+          <li class="footer-inner_li"><a href="certifying-center.html">Удостоверяющий центр</a></li>
+          <li class="footer-inner_li"><a href="mail-service.html">Почтовые службы</a></li>
+        </ul>
+      </div>
+      <div class="footer-inner_block footer-inner_block_4">
+        <button class="footer-inner_btn footer-inner_btn_1">Заказать</button>
+        <button class="footer-inner_btn footer-inner_btn_2">Задать вопрос</button>
+      </div>
+      <div class="footer-inner_subtext">© 2021 DesignB2B</div>
+    </div>
+  </footer>
+  <script>
+    let ulTitle1 = document.querySelector('.footer-inner_title_1');
+    let ulTitle2 = document.querySelector('.footer-inner_title_2');
+    let ulBtn1 = document.querySelector('.footer-inner_title_icon_1');
+    let ulBtn2 = document.querySelector('.footer-inner_title_icon_2');
+    let ul1 = document.querySelector('.footer-inner_ul_1')
+    let ul2 = document.querySelector('.footer-inner_ul_2')
+
+    let google = document.querySelector('.about-title')
+
+    ulTitle1.addEventListener("click", ul1Toggle);
+    ulTitle2.addEventListener("click", ul2Toggle);
+
+    
+    // google.addEventListener("click", googleFunc);
+    // cancelBtn.addEventListener("click", closeMenu);
+    // listSpec.addEventListener("click", listToggle);
+    function googleFunc(){
+      $( '.project-slider' ).slick('slickGoTo', 4, false);
+    }
+    
+
+
+    function ul1Toggle() {
+      ulBtn1.classList.toggle("footer-inner_title_icon_active");
+      ulTitle1.classList.toggle("footer-inner_title_active");
+      ul1.classList.toggle("footer-block");
+    }
+    function ul2Toggle() {
+      ulBtn2.classList.toggle("footer-inner_title_icon_active");
+      ulTitle2.classList.toggle("footer-inner_title_active");
+      ul2.classList.toggle("footer-block");
+    }
+  </script>
+  <script>
+    let projectSlider = document.getElementById('project')
+    let linkFooter = document.querySelectorAll('.footer-inner_block_2 .footer-inner_li');
+    // console.log(linkFooter[1])
+    linkFooter[0].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 1, false);
+    });
+    linkFooter[1].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 2, false);
+    });
+    linkFooter[2].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 3, false);
+    });
+    linkFooter[3].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 4, false);
+    });
+    linkFooter[4].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 7, false);
+    });
+    linkFooter[5].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 5, false);
+    });
+    linkFooter[6].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 6, false);
+    });
+    linkFooter[7].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 9, false);
+    });
+    linkFooter[8].addEventListener("click", function(){
+      $( '.project-slider' ).slick('slickGoTo', 10, false);
+    });
+
+  </script>
+  <!-- /Footer -->
+
+
+    
+  <!-- FROM1 -->
+  <div class="form1-overlay">
+    <form action="" class="form1">
+      <div class="form1-cross"></div>
+      <div class="form1-title">Оставить заявку</div>
+      <select name="service" required>
+        <option value="">Выбор услуги</option>
+        <option value="mob-app">Мобильное приложение</option>
+        <option value="web-service">WEB-сервис</option>
+        <option value="corporate-solution">Корпоративное решение</option>
+        <option value="certifying-center">Удостоверяющий центр</option>
+        <option value="mail-service">Почтовые службы</option>
+        <option value="other">Другое</option>
+      </select>
+      <input name="phone" type="phone" placeholder="Телефон" required>
+      <input name="email" type="mail" placeholder="E-mail" required>
+      <input name="name" type="name" placeholder="Имя" required>
+      <button class="form1-btn">Заказать</button>
+    </form>
+  </div>
+  <script>
+    let body = document.querySelector('body')
+    let cross = document.querySelector('.form1-cross')
+    let form1 = document.querySelector('.form1')
+    let form1Overlay = document.querySelector('.form1-overlay')
+    let btn1 = document.querySelector('.header-bar_btn')
+    let btn2 = document.querySelector('.call-btn')
+    let btn3 = document.querySelector('.project-slide_1 .project-slide_btn')
+    let btn4 = document.querySelector('.project-slide_2 .project-slide_btn')
+    let btn5 = document.querySelector('.project-slide_3 .project-slide_btn')
+    let btn6 = document.querySelector('.project-slide_4 .project-slide_btn')
+    let btn7 = document.querySelector('.project-slide_5 .project-slide_btn')
+    let btn8 = document.querySelector('.project-slide_6 .project-slide_btn')
+    let btn9 = document.querySelector('.project-slide_7 .project-slide_btn')
+    let btn10 = document.querySelector('.project-slide_8 .project-slide_btn')
+    let btn11 = document.querySelector('.project-slide_9 .project-slide_btn')
+    let btn12 = document.querySelector('.project-slide_10 .project-slide_btn')
+    let btn13 = document.querySelector('.project-slide_11 .project-slide_btn')
+    let btn14 = document.querySelector('.footer-inner_btn_1')
+    let btn15 = document.querySelector('.footer-inner_btn_2')
+    let formBtnArray = []
+    formBtnArray.push(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15)
+    formBtnArray.forEach(function(elem) {
+    elem.addEventListener("click", openForm1)
+    })
+    cross.addEventListener('click', closeForm1)
+    // form1Overlay.addEventListener('click', closeForm1)
+    // form1.addEventListener('click', openForm1)
+
+    function openForm1(){
+      body.classList.add('overflowh')
+      form1Overlay.classList.add('form1flex')
+    }
+    function closeForm1(){
+      body.classList.remove('overflowh')
+      form1Overlay.classList.remove('form1flex')
+    }
+
+    // $(".form1-overlay").click(function(e) { 
+    // let form1Arr = Array.from($('.form1').children());
+    // form1Arr.push(form1)
+    // jQuery.each(jQuery('h1').add('h2')).function(index, element) { ... }
+    // let targetE = e.target != form1Arr;
+    // if(targetE){
+    //   closeForm1();
+    // }
+    // $('.form1').children().each(function(e){
+    //   console.log(e)
+    // })
+    // $('#parentElem .filter-options').each(function(index)
+    // {
+    //  mass.push(this);
+    // }
+      
+    // });
+
+    // $(document).click( function(event){
+    //   if( $(event.target).closest(".form1").length ) return;
+    //   $(".form1").removeClass('overflowh');
+    //   $("body").removeClass('form1flex');
+    //   event.stopPropagation();
+    // });
+
+  </script>
+  <!-- /FORM1 -->
+
+</body>
+</html>

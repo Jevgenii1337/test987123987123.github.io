@@ -1,0 +1,238 @@
+body
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  padding: 0
+  margin: 0
+.overflowh
+  overflow: hidden
+.slick-slide
+  outline: none
+// @media screen and (min-width: 1440px)
+// @media screen and (min-width: 1200px)
+// @media screen and (min-width: 992px)
+// @media screen and (min-width: 768px)
+// @media screen and (min-width: 576px)
+// @media screen and (max-width: 575px)
+
+// IT
+.it
+  padding-top: 71px
+  & .type-block
+    margin-bottom: 24px
+  & .type-block_img
+    // margin-left: 40px
+    margin-right: 104px
+  & .type-block_subtitle
+    margin-bottom: 10px
+  & .type-block_text
+    margin-top: 60px
+    position: relative
+    &:after
+      top: -48px
+      left: 0
+      position: absolute
+      color: #a5d812
+      font-family: "CeraPro-Black"
+      font-size: 40px
+      font-weight: 400
+      text-align: left
+      text-transform: uppercase
+    &_it1
+      &:after
+        content: "01"
+    &_it2
+      &:after
+        content: "02"
+    &_it3
+      &:after
+        content: "03"
+@media screen and (max-width: 1200px)
+  .it
+    & .type-block_img
+      margin-right: 0px
+@media screen and (max-width: 575px)
+  .it
+    padding-top: 29px
+    & .type-block
+      margin-bottom: 0
+    & .type-block_img_1
+      display: block
+      max-width: 206px
+      width: 70%
+      height: 70%
+    & .type-block_subtitle
+      margin-bottom: 0
+    & .type-block_text
+      margin-top: 43px
+      &:after
+        font-size: 24px
+        top: -32px
+// BRICK
+.it-bricks
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-bottom: 60px
+  &-wrapper
+    width: 1140px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+  &_brick
+    margin-top: 54px
+    width: 347px
+    color: #262626
+    font-family: "CeraPro-Regular"
+    font-size: 20px
+    font-weight: 400
+    text-align: left
+    position: relative
+    &:after
+      top: -21px
+      left: 0
+      position: absolute
+      content: ""
+      width: 55px
+      height: 5px
+      background-color: #a5d812
+@media screen and (max-width: 1200px)
+  .it-bricks
+    width: 100%
+    display: flex
+    justify-content: center
+    &-wrapper
+      width: 90%
+    &_brick
+      &:nth-child(odd)
+        margin-right: 50px
+@media screen and (max-width: 575px)
+  .it-bricks
+    margin-bottom: 37px
+    &-wrapper
+      justify-content: center
+    &_brick
+      font-size: 14px
+      margin-top: 38px
+      max-width: 347px
+      width: 100%
+      &:first-child
+        margin-top: 47px
+      &:after
+        top: -12px
+        width: 35px
+        height: 4px
+        background-color: #8bd900
+      &:nth-child(odd)
+        margin-right: 0px
+// /BRICK
+
+// IT-list
+.it-list
+  width: 100%
+  display: flex
+  justify-content: center
+  background-color: #edf3f5
+  padding: 62px 0 62px 0
+  &_wrapper
+    width: 1140px
+    display: flex
+    flex-direction: row
+  &_block
+    width: 535px
+    &_1
+      margin-right: 66px
+  &_ul
+    margin-top: 0
+    padding-left: 33px
+    list-style: none
+  &_li
+    margin-top: 15px
+    color: #262626
+    font-family: "CeraPro-Regular"
+    font-size: 18px
+    font-weight: 400
+    text-align: left
+    position: relative
+    &:first-child
+      margin-top: 0
+    &:after
+      position: absolute
+      content: ""
+      top: 1px
+      left: -31px
+      background: url('../../img/general/check.png') center no-repeat
+      background-size: 21px 21px
+      width: 21px
+      height: 21px
+@media screen and (max-width: 1200px)
+  .it-list
+    &_wrapper
+      width: 90%
+      flex-direction: column
+      align-items: center
+    &_block
+      &_1
+        margin-right: 0px
+
+@media screen and (max-width: 575px)
+  .it-list
+    padding: 30px 0 30px 0
+    &_block
+      width: 267px
+      &_1
+        & .it-list_ul
+          margin-bottom: 10px
+    &_ul
+      margin-bottom: 0
+    &_li
+      margin-top: 10px
+      font-size: 12px
+      &:after
+        width: 17px
+        height: 17px
+        background-size: 17px 17px
+        left: -23px
+        top: 0
+// /IT-list
+
+// /IT-TYPE
+.it-type
+  width: 1140px
+  padding-top: 80px
+  padding-bottom: 65px
+  & .type-block
+    &_1
+      margin-bottom: 40px
+    &_2
+      width: 1063px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0
+@media screen and (max-width: 1200px)
+  .it-type
+    width: 90%
+    & .type-block
+      &_1
+        margin-bottom: 80px
+      &_2
+        width: 100%
+@media screen and (max-width: 575px)
+  .it-type
+    padding-top: 42px
+    padding-bottom: 48px
+    & .type-block
+      &_img_1
+        display: block
+        // max-width: 290px
+        width: 70%
+        height: 70%
+        margin-bottom: 15px
+      &_1
+        margin-bottom: 44px
+        & .type-block_img
+          min-width: 290px
+// /IT-TYPE
+
+// /IT

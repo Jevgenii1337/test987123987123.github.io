@@ -1,0 +1,71 @@
+.type-block
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 80px
+  &_2
+    & .type-block_img
+      order: 2
+    & .type-block_inner
+      order: 1
+  &_title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 36px
+    font-weight: 700
+    text-align: left
+    text-transform: uppercase
+    margin-bottom: 15px
+  &_subtitle
+    color: #262626
+    font-family: "CeraPro-Medium"
+    font-size: 24px
+    font-weight: 500
+    text-align: left
+  &_text
+    color: #262626
+    font-family: "CeraPro-Regular"
+    font-size: 18px
+    font-weight: 400
+    text-align: left
+    margin-top: 15px
+  &_inner
+    width: 550px
+  &_img_2
+    display: none
+@media screen and (max-width: 1200px)
+  .type-block
+    flex-direction: column
+    justify-content: center
+    &_inner
+      width: 500px
+    &_img
+      margin-bottom: 40px
+    &_2
+      & .type-block_img
+        order: 1
+      & .type-block_inner
+        order: 2
+@media screen and (max-width: 575px)
+  .type-block
+    flex-direction: column
+    justify-content: center
+    margin-bottom: 16px
+    &_inner
+      width: 90%
+    &_img
+      margin-bottom: 30px
+      &_1
+        display: none
+      &_2
+        display: inline-block
+    &_title
+      text-align: center
+      font-size: 20px
+      margin-bottom: 10px
+    &_subtitle
+      font-size: 14px
+    &_text
+      margin-top: 10px
+      font-size: 14px

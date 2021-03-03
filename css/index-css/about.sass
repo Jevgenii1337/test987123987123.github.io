@@ -1,0 +1,136 @@
+.about
+  padding-top: 84px
+  &-title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 30px
+  &-block
+    width: 1140px
+    &_1
+      display: flex
+      justify-content: space-between
+      margin-bottom: 34px
+    &_part
+      max-width: 543px
+      color: #262626
+      font-family: "CeraPro-Regular"
+      font-size: 18px
+      font-weight: 400
+      text-align: left
+    &_2
+      padding: 44px 0 37px 0
+      display: flex
+      flex: row
+      justify-content: space-around
+      background-color: #262626
+    &_thesis
+      text-align: center
+      color: #a5d812
+      font-family: "CeraPro-Black"
+      font-size: 40px
+      font-weight: 900
+      text-transform: uppercase
+      max-width: 226px
+      &_descr
+        color: #fffefe
+        font-family: "CeraPro-Regular"
+        font-size: 18px
+        font-weight: 400
+        text-transform: lowercase
+@media screen and (max-width: 1200px)
+  .about
+    width: 100%
+    &-block
+      &_1
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+      &_2
+        width: 100%
+      &_part
+        text-align: center
+        &:nth-child(1)
+          margin-bottom: 30px
+
+@media screen and (max-width: 1140px)
+  .about
+    width: 100%
+    &-block
+      &_1
+      &_2
+        width: 100%
+      &_thesis
+@media screen and (max-width: 900px)
+  .about
+    width: 100%
+    &-block
+      &_1
+      &_2
+        width: 100%
+        position: relative
+        flex-direction: column
+      &_thesis
+        text-align: left
+        &:nth-child(1)
+          margin-bottom: 15px
+        &:nth-child(2)
+          top: 56px
+        &:nth-child(4)
+          top: 140px
+        &:nth-child(odd)
+          margin-left: 50px
+        &:nth-child(even)
+          text-align: right
+          position: absolute
+          right: 50px
+@media screen and (max-width: 575px)
+  .about
+    padding-top: 50px
+    &-title
+      font-size: 20px
+      margin-bottom: 19px
+    &-block
+      &_1
+        margin-bottom: 25px
+      &_part
+        font-size: 14px
+        max-width: 288px
+        text-align: left
+        &:nth-child(1)
+          margin-bottom: 17px
+      &_2
+        padding: 0
+        height: 210px
+      & .about-block_thesis
+        font-size: 22px
+        position: static
+        max-width: 133px
+        text-align: left
+        margin-left: 0
+        font-size: 22px
+        position: absolute
+        left: 50%
+        top: 0
+        &_descr
+          font-size: 13px
+        &:nth-child(1)
+          top: 27px
+          order: 2
+          margin-bottom: 0
+        &:nth-child(2)
+          top: 27px
+          transform: translateX(-105%)
+          order: 1
+          right: auto
+        &:nth-child(3)
+          top: 105px
+          transform: translateX(-105%)
+          order: 3
+        &:nth-child(4)
+          order: 4
+          top: 105px

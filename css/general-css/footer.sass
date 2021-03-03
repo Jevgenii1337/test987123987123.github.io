@@ -1,0 +1,296 @@
+.footer
+  width: 100vw
+  padding: 59px 0 116px 0
+  background-color: #0a0a0a
+  color: #ffffff
+  z-index: 1
+  & ul
+    list-style: none
+    padding-left: 0
+  & a
+    color: #ffffff
+    text-decoration: none
+  &-inner
+    margin-left: auto
+    margin-right: auto
+    width: 1140px
+    padding-bottom: 28px
+    border-bottom: 1px solid rgba(247,247,247,0.39)
+    position: relative
+    &_title
+      font-family: "CeraPro-Bold"
+      font-size: 21px
+      font-weight: 700
+    &_subtext
+      position: absolute
+      bottom: -40px
+      left: 0
+      color: #ffffff
+      font-family: "CeraPro-Thin"
+      font-size: 14px
+      font-weight: 400
+      text-align: left
+      font-style: normal
+      letter-spacing: normal
+      line-height: normal
+    &_block
+      vertical-align: top
+      width: auto
+      display: inline-block
+      color: #ffffff
+      font-family: "CeraPro-Regular"
+      font-size: 16px
+      font-weight: 400
+      text-align: left
+      font-style: normal
+      letter-spacing: 0.64px
+      line-height: normal
+      &_1
+        margin-right: 41px
+        max-width: 351px
+      &_2
+        letter-spacing: normal
+        margin-right: 62px
+      &_3
+        letter-spacing: normal
+      &_4
+        float: right
+      &_logo
+        width: 84px
+        height: 64px
+      &_phone
+        margin-top: 19px
+      &_mail
+        margin-top: 15px
+      &_address
+        margin-top: 17px
+      &_media
+        margin-top: 30px
+        &_icon
+          width: 20px
+          height: 20px
+          display: inline-block
+          &_vk
+            background: url('../../img/general/footer/vk2.svg') no-repeat center
+            background-size: 20px 20px
+            margin-right: 4px
+          &_ok
+            background: url('../../img/general/footer/ok2.svg') no-repeat center
+            background-size: 18px 18px
+            margin-right: 4px
+          &_fb
+            background: url('../../img/general/footer/fb2.svg') no-repeat center
+            background-size: 18px 18px
+    &_li
+      line-height: 29px
+    &_btn
+      outline: none
+      border: none
+      display: block
+      border: 1px solid #a5d812
+      border-radius: 15px
+      color: #ffffff
+      background-color: #0a0a0a
+      font-family: "CeraPro-Regular"
+      font-size: 13px
+      font-weight: 400
+      text-align: center
+      font-style: normal
+      letter-spacing: 0.52px
+      line-height: normal
+      &_1
+        padding: 6px 48px 6px 48px
+        margin-bottom: 13px
+      &_2
+        padding: 6px 28px 6px 28px
+
+.footer-inner_title_icon
+  display: none
+// .footer-none, .footer-block, .footer-flex
+//   display: none
+// @media screen and (min-width: 1440px)
+@media screen and (max-width: 1180px)
+  .footer
+    &-inner
+      width: 90%
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      &_block
+        width: 50%
+        margin-right: 0
+        float: none
+        &_2
+          text-align: right
+        &_4
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: flex-end
+      &_btn
+        max-width: 160px
+@media screen and (min-width: 992px)
+  .footer-inner_block_media_icon:hover
+    width: 20px
+    height: 20px
+  .footer-inner_block_media_icon_vk:hover
+    background: url('../../img/general/footer/vk3.svg') no-repeat center
+    background-size: 20px 20px
+  .footer-inner_block_media_icon_ok:hover
+    background: url('../../img/general/footer/ok3.svg') no-repeat center
+    background-size: 18px 18px
+  .footer-inner_block_media_icon_fb:hover
+    background: url('../../img/general/footer/fb3.svg') no-repeat center
+    background-size: 18px 18px
+  .footer-inner_li a:hover
+    color: #9ab54b
+  .footer-inner_block_phone a:hover
+    color: #9ab54b
+  .footer-inner_block_mail a:hover
+    color: #9ab54b
+  .footer-inner_block_address:hover
+    color: #9ab54b
+  .footer-inner_btn:hover
+    cursor: pointer
+    background-color: #9ab54b
+// @media screen and (min-width: 768px)
+// @media screen and (min-width: 576px)
+@media screen and (max-width: 575px)
+  .footer
+    padding: 21px 15px 60px 15px
+    &-inner
+      width: 290px
+      flex-direction: column
+      position: relative
+      align-items: center
+      padding-bottom: 15px
+      &_ul
+        padding: 8px 0 0px 0px
+        margin: 0
+        margin-left: 8px
+        display: none
+      &_li
+        font-family: "CeraPro-Thin"
+        font-size: 12px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        margin-bottom: 5px
+      &_title
+        color: #ffffff
+        font-family: "CeraPro-Regular"
+        font-size: 16px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        position: relative
+        max-width: 190px
+        &_active
+          color: #a5d812
+        &_icon
+          display: block
+          position: absolute
+          top: 7px
+          right: 0px
+          width: 9px
+          height: 9px
+          background: url("../../img/general/footer/next.svg") center no-repeat
+          background-size: 9px 9px
+          transform: rotate(-90deg)
+          &_active
+            background: url("../../img/general/footer/next2.svg") center no-repeat
+            transform: rotate(180deg)
+      &_block
+        width: 100%
+        max-width: none
+        &_phone
+          margin-top: 3px
+          font-family: "CeraPro-Thin"
+          font-size: 12px
+          font-weight: 300
+          text-align: left
+          font-style: normal
+          letter-spacing: 0.48px
+          line-height: normal
+          order: 3
+        &_mail
+          margin-top: 0
+          font-family: "CeraPro-Thin"
+          font-size: 12px
+          font-weight: 300
+          text-align: left
+          font-style: normal
+          letter-spacing: 0.48px
+          line-height: normal
+          order: 2
+        &_address
+          font-family: "CeraPro-Thin"
+          font-size: 12px
+          font-weight: 300
+          text-align: left
+          font-style: normal
+          letter-spacing: 0.48px
+          line-height: normal
+          order: 4
+          margin-top: 3px
+        &_logo
+          order: 1
+          padding-bottom: 75px
+          margin-left: auto
+          margin-right: auto
+        &_1
+          display: flex
+          flex-direction: column
+        &_2
+          text-align: left
+          margin-top: 19px
+        &_3
+          text-align: left
+          margin-top: 15px
+        &_4
+          position: absolute
+          left: 50%
+          top: 90px
+          transform: translateX(-50%)
+          flex-direction: row
+          justify-content: center
+          align-items: flex-start
+        &_media
+          margin-top: 0
+          position: absolute
+          bottom: -40px
+          right: 0
+      &_btn
+        padding: 0
+        width: 137px
+        height: 30px
+        text-align: center
+        line-height: 26px
+        &_1
+          margin-right: 16px
+      &_subtext
+        bottom: -40px
+  .footer-block
+    display: block
+.footer-inner_block_media_icon_vk:active
+  background: url('../../img/general/footer/vk4.svg') no-repeat center
+  background-size: 20px 20px
+.footer-inner_block_media_icon_ok:active
+  background: url('../../img/general/footer/ok4.svg') no-repeat center
+  background-size: 18px 18px
+.footer-inner_block_media_icon_fb:active
+  background: url('../../img/general/footer/fb4.svg') no-repeat center
+  background-size: 18px 18px
+.footer-inner_block_phone a:active
+  color: #789c12
+.footer-inner_block_mail a:active
+  color: #789c12
+.footer-inner_block_address:active
+  color: #789c12
+.footer-inner_li a:active
+  color: #789c12
+.footer-inner_btn:active
+  background-color: #789c12

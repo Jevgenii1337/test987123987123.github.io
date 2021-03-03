@@ -1,0 +1,208 @@
+1. Hover для стрелок на главное в слайдере
+2. В шапке на моб-менюшке, ховер убрать
+
+
+
+
+
+
+
+<div class="main">
+  <div class="slider slider-for">
+    <div><h3>1</h3></div>
+    <div><h3>2</h3></div>
+    <div><h3>3</h3></div>
+    <div><h3>4</h3></div>
+    <div><h3>5</h3></div>
+  </div>
+  <div class="slider slider-nav">
+    <div><h3>1</h3></div>
+    <div><h3>2</h3></div>
+    <div><h3>3</h3></div>
+    <div><h3>4</h3></div>
+    <div><h3>5</h3></div>
+  </div>
+  <div class="action">
+    <a href="#" data-slide="3">go to slide 3</a>
+    <a href="#" data-slide="4">go to slide 4</a>
+    <a href="#" data-slide="5">go to slide 5</a>
+  </div>
+</div>
+
+
+body{
+  background:#ccc;
+}
+.main {
+  font-family:Arial;
+  width:500px;
+  display:block;
+  margin:0 auto;
+}
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.action{
+  display:block;
+  margin:100px auto;
+  width:100%;
+  text-align:center;
+}
+.action a {
+  display:inline-block;
+  padding:5px 10px; 
+  background:#f30;
+  color:#fff;
+  text-decoration:none;
+}
+.action a:hover{
+  background:#000;
+}
+
+
+$('.slider-for').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '.slider-nav'
+ });
+ $('.slider-nav').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   asNavFor: '.slider-for',
+   dots: true,
+   focusOnSelect: true
+ });
+
+ $('a[data-slide]').click(function(e) {
+   e.preventDefault();
+   var slideno = $(this).data('slide');
+   $('.slider-nav').slick('slickGoTo', slideno - 1);
+ });
+
+
+https://codepen.io/vilcu/pen/ZQwdGQ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+В URL добавляйте параметр, и проверяйте его наличие на новой странице.
+
+К ссылке добавляем параметр opendiv=web
+<a href="http://site.ru/page.html?opendiv=web" class="link-new">
+
+
+и на новой странице вставьте такой JS-код
+
+function $_GET(key) {
+  var s = window.location.search;
+  s = s.match(new RegExp(key + '=([^&=]+)'));
+  return s ? s[1] : false;
+}
+
+$(document).ready(function() {
+    if($_GET['opendiv'] == 'web') {
+        $('#web').toggleClass('active');
+    }
+});
+
+который проверяет, есть ли в URL такой параметр, и если есть, то он открывает див с id="web".
+
+https://qna.habr.com/q/498977
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+    <style>
+        .menu {
+            text-align: center;
+        }
+        .container {
+            width: 400px;
+            margin:1em auto;
+        }
+        .slick-prev:before, .slick-next:before  {
+            color: gray ! important;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <a href="#">Img 1</a>
+    <a href="#">Img 2</a>
+    <a href="#">Img 3</a>
+    <a href="#">Img 4</a>
+    <a href="#">Img 5</a>
+    <a href="#">Img 6</a>
+    <a href="#">Img 7</a>
+    <a href="#">Img 8</a>
+    <a href="#">Img 9</a>
+    <a href="#">Img 10</a>
+
+</div>
+<div class="container">
+    <div class="slideshow">
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-01/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-02/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-03/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-04/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-05/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-06/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-07/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-08/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-09/"></div>
+        <div><img src="http://lorempixel.com/400/200/nature/IMAGE-10/"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"/></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".slideshow").slick({
+        dots: true
+    });
+    $(".menu a").click(function(e){
+        e.preventDefault();
+        slideIndex = $(this).index();
+        $( '.slideshow' ).slickGoTo( parseInt(slideIndex) );
+    });
+});
+</script>
+</body>
+</html>
+
+https://gist.github.com/galdiolo/4b73c81925f659320b5a

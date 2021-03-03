@@ -1,0 +1,1014 @@
+body
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  padding: 0
+  margin: 0
+.overflowh
+  overflow: hidden
+.slick-slide
+  outline: none
+// @media screen and (min-width: 1440px)
+// @media screen and (min-width: 1200px)
+// @media screen and (min-width: 992px)
+// @media screen and (min-width: 768px)
+// @media screen and (min-width: 576px)
+// @media screen and (max-width: 575px)
+// MAIN------------------------------------------
+.main
+  width: 100vw
+  height: auto
+  overflow-x: hidden
+  &-slider
+    position: relative
+    &_slide
+      width: 100%
+      height: auto
+      max-height: 540px
+      background-size: 2102px 540px
+      &_1
+        background-color: #121b3a
+        & .main-slider_slide
+          &_part
+            &_1
+              position: relative
+              & img
+                position: absolute
+                left: 70px
+                top: 42px
+            &_2
+              width: 653px
+              padding: 88px 0 108px 0
+        & .main-slider_li
+          &:nth-child(2)
+            max-width: 460px
+          &:nth-child(3)
+            max-width: 510px
+      &_2
+        overflow: hidden
+        background-color: #fff
+        & .main-slider_title
+          color: #000
+        & .main-slider_li
+          color: #000
+          font-size: 18px
+        & .main-slider_slide
+          &_part
+            &_1
+              position: relative
+              & img
+                position: absolute
+                left: -180px
+                top: 49px
+            &_2
+              width: 544px
+              padding: 50px 0 176px 0
+      &_wrraper
+        width: 1145px
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: space-between
+      &_part
+        display: inline-block
+        height: auto
+        &_1
+        &_2
+          vertical-align: top
+    &_title
+      color: #ffffff
+      font-family: "CeraPro-Bold"
+      font-size: 30px
+      font-weight: 700
+      text-transform: uppercase
+    &_ul
+      color: #ffffff
+      margin: 33px 0 48px 0
+      padding-left: 30px
+      list-style: none
+      font-family: "CeraPro-Regular"
+      font-size: 20px
+      font-weight: 400
+    &_li
+      margin-bottom: 12px
+      position: relative
+      &:after
+        position: absolute
+        top: 3px
+        left: -31px
+        content: url("../../img/general/check.png")
+        background-size: 21px 21px
+        width: 21px
+        height: 21px
+      &:last-child
+        margin-bottom: 0
+    &_btn
+      width: 175px
+      height: 40px
+      background-color: #a5d812
+      text-align: center
+      line-height: 30px
+      color: #ffffff
+      font-family: "CeraPro-Bold"
+      font-size: 18px
+      font-weight: 700
+      border: none
+      outline: none
+      border-radius: 30px
+  & .slick
+    &-slider
+      margin-bottom: 0
+    &-arrow
+      z-index: 1
+      width: 45px
+      height: 45px
+      background-size: 45px 45px
+      left: 50%
+      top: 50%
+    &-prev
+      background: url('../../img/index/left.png') center no-repeat
+      transform: translate(-1315%,-50%)
+      &:before
+        display: none
+    &-next
+      background: url('../../img/index/right.png') center no-repeat
+      transform: translate(1215%,-50%)
+      &:before
+        display: none
+    &-dots
+      bottom: 20px
+      // height: 4px
+      & li
+        width: 45px
+        height: 4px
+        & button
+          width: 45px
+          height: 4px
+          background-color: #aeaeae
+          opacity: 0.75
+          border-radius: 15px
+          font-size: medium
+          line-height: normal
+          padding: 0
+          &:before
+            display: none
+        &.slick-active button
+          background-color: #a5d812
+          opacity: 1
+
+@media screen and (max-width: 1199px)
+  .main
+    &-slider
+      &_slide
+        &_1
+          & .main-slider_slide
+            &_part
+              &_2
+                padding: 50px 0 120px 0
+        &_2
+          & .main-slider_slide
+            &_part
+              &_2
+                padding: 50px 0 100px 0
+          & .main-slider_slide_part
+            &_2
+              width: 653px
+        &_wrraper
+          width: 100%
+          justify-content: center
+        &_part
+          &_1
+            display: none
+      &_title
+        text-align: center
+      &_btn
+        display: block
+        margin-left: auto
+        margin-right: auto
+    & .slick
+      &-arrow
+        transform: none
+        top: 50%
+        transform: translateY(-50%)
+      &-prev
+        left: 20px
+      &-next
+        left: auto
+        right: 20px
+@media screen and (max-width: 991px)
+  .main
+    &-slider
+      &_slide
+        &_wrraper
+          width: 575px
+          justify-content: center
+        &_1
+          & .main-slider_slide
+            &_part
+              &_1
+              &_2
+                padding: 88px 0 73px 0
+                width: 450px
+        &_2
+          & .main-slider_li
+            font-size: 16px
+            &:after
+              top: 0px
+          & .main-slider_slide
+            &_part
+              &_1
+                // overflow: hidden
+                & img
+                  left: 0
+                  top: 0
+                  width: 546px
+                  height: 350px
+              &_2
+                width: 450px
+                padding: 50px 0 67px 0
+        &_part
+          &_1
+            display: none
+          &_2
+            margin-right: 0
+            // width: 450px
+      &_ul
+        font-size: 18px
+      &_li
+        &:after
+          top: 1px
+          background-size: 17px 17px
+          width: 17px
+          height: 17px
+    & .slick
+      &-prev
+        left: 0px
+      &-next
+        right: 0px
+@media screen and (min-width: 992px)
+  // HOVER
+  .main-slider_btn:hover
+    cursor: pointer
+    background-color: #9ab54b
+  .main .slick-dots li:not(.slick-active) button:hover
+    background-color: #a5d812
+    opacity: 1
+  // /HOVER
+
+@media screen and (max-width: 575px)
+  .main
+    width: 100%
+    height: auto
+    &-slider
+      height: auto
+      &_slide
+        height: auto
+        max-height: none
+        &_wrraper
+          width: 100%
+        &_1
+          background: url('../../img/index/Banner1-mob.png') center no-repeat
+          background-size: 575px 431px
+          & .main-slider
+            &_ul
+              margin-bottom: 33px
+            &_title
+              margin-bottom: 21px
+            &_slide
+              &_part
+                &_2
+                  padding: 0
+                  padding-top: 47px
+                  padding-bottom: 64px
+                  width: 258px
+                  padding-left: 20px
+                  width: 268px
+                // padding: 88px 0 173px 0
+          & .main-slider
+            &_btn
+              margin-left: 35px
+        &_2
+          background: url('../../img/index/Banner2-mob.png') center no-repeat
+          background-size: 575px 431px
+          & .main-slider
+            &_title
+              margin-bottom: 15px
+            &_ul
+              margin-bottom: 33px
+            &_li
+              font-size: 13.5px
+              &:nth-child(2)
+                display: none
+              &:after
+                top: 0px
+          & .main-slider_slide
+            &_part
+              &_2
+                width: 258px
+                padding: 50px 0 83px 0
+                padding-left: 10px
+                width: 268px
+        &_wrraper
+          height: auto
+      &_title
+        font-family: "CeraPro-Black"
+        font-size: 20px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+      &_ul
+        // font-family: "CeraPro-Light"
+        font-size: 14px
+        font-weight: 300
+        font-style: normal
+        padding-left: 0
+        margin: 0px 0 44px 0
+        margin-left: 0px
+      &_li
+        margin-bottom: 13px
+        &:after
+          content: ''
+          background: url("../../img/general/check.png") center no-repeat
+          background-size: 17px
+          width: 17px
+          height: 17px
+          top: 0px
+          left: -22px
+      &_btn
+        margin-right: 0
+        margin-left: 40px
+    & .slick
+      &-list
+        height: 430px
+      &-arrow
+        bottom: 20px
+        transform: none
+        top: auto
+        left: 50%
+        transform: translateX(-50%)
+        width: 23px
+        height: 23px
+        background-size: 23px 23px
+        right: auto
+      &-prev
+        transform: translateX(-115%)
+        background: url(../img/index/left-mob.png) center no-repeat
+      &-next
+        transform: translateX(15%)
+        background: url(../img/index/right-mob.png) center no-repeat
+// ACTIVE
+.main-slider_btn:active
+  background-color: #789c12
+// /ACTIVE
+
+// /MAIN------------------------------------------
+
+// OFFER------------------------------------------
+.offer
+  width: 100%
+  padding: 78px 0 87px 0
+  & button
+    outline: none
+    border: none
+  &-title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 28px
+  &-subtitle
+    color: #262626
+    font-family: "CeraPro-Medium"
+    font-size: 24px
+    font-weight: 500
+    text-align: center
+    margin-bottom: 17px
+  &-text
+    margin-left: auto
+    margin-right: auto
+    max-width: 535px
+    color: #262626
+    font-family: "CeraPro-Regular"
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+  &-content
+    margin-top: 40px
+    width: 1140px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    &_block
+      width: 451px
+      height: 740px
+      border: 1px solid #d1d1d1
+      background-color: #ffffff
+      display: inline-block
+      border-radius: 10px
+      padding: 0 50px 0 50px
+      position: relative
+      &:nth-child(-n+2)
+        margin-bottom: 27px
+      &_img
+        margin-left: auto
+        margin-right: auto
+        margin-top: 37px
+        margin-bottom: 50px
+        & img
+          width: 100%
+          height: 100%
+      &_1
+        & .offer-content_block_img
+          width: 436px
+          height: 299px
+      &_2
+        & .offer-content_block_img
+          width: 362px
+          height: 299px
+        & .offer-content_block_wrraper
+          &_li
+            font-size: 17px
+      &_3
+        & .offer-content_block_img
+          width: 296px
+          height: 299px
+      &_4
+        & .offer-content_block_img
+          margin-left: -17px
+          width: 487px
+          height: 324px
+          margin-top: 13px
+      &_wrraper
+        &_title
+          margin-bottom: 27px
+          color: #262626
+          font-family: "CeraPro-Bold"
+          font-size: 28px
+          font-weight: 700
+          text-align: left
+        &_ul
+          padding-left: 28px
+          list-style: none
+        &_li
+          color: #262626
+          font-family: "CeraPro-Regular"
+          font-size: 18px
+          font-weight: 400
+          text-align: left
+          margin-bottom: 10px
+          position: relative
+          &:after
+            position: absolute
+            content: ''
+            background: url('../../img/index/check-circle.png') center no-repeat
+            background-size: 20px 20px
+            width: 20px
+            height: 20px
+            top: 2px
+            left: -28px
+          &:last-child
+            margin-bottom: 0
+        &_btnblock
+          position: absolute
+          left: 50px
+          // left: 50%
+          // transform: translateX(-50%)
+          bottom: 47px
+          display: flex
+          flex-direction: row
+        &_btn
+          width: 175px
+          height: 40px
+          background-color: #a5d812
+          border-radius: 40px
+          text-align: center
+          color: #ffffff
+          font-family: "CeraPro-Bold"
+          font-size: 18px
+          font-weight: 700
+          // display: flex
+          // align-items: center
+          // justify-content: center
+          &_2
+            background-color: #c6c6c6
+            margin-left: 21px
+@media screen and (max-width: 1200px)
+  .offer
+    &-content
+      width: 575px
+      justify-content: normal
+      flex-direction: column
+      align-items: center
+      &_block
+        &:nth-child(-n+3)
+          margin-bottom: 27px
+@media screen and (min-width: 992px)
+  .offer-content_block_wrraper_btn:hover
+    background-color: #9ab54b
+    cursor: pointer
+
+@media screen and (max-width: 992px)
+  .offer
+    &-title
+      font-size: 34px
+      margin-bottom: 28px
+      margin-left: 30px
+      margin-right: 30px
+    &-subtitle
+      font-size: 22.5px
+      margin-bottom: 17px
+      margin-left: 30px
+      margin-right: 30px
+    &-text
+      width: 90%
+      font-size: 17px
+@media screen and (max-width: 575px)
+  .offer
+    padding: 45px 0 50px 0
+    &-title
+      font-size: 20px
+      margin-bottom: 14px
+      margin-left: 30px
+      margin-right: 30px
+    &-subtitle
+      font-family: "CeraPro-Medium"
+      font-weight: 500
+      font-size: 16px
+      margin-bottom: 11px
+      margin-left: 30px
+      margin-right: 30px
+    &-text
+      width: 90%
+      font-size: 14px
+    &-content
+      width: 100vw
+      margin-top: 22px
+      &_block
+        padding-left: 26px
+        padding-right: 26px
+        max-width: 238px
+        height: auto
+        &_img
+          margin-top: 20px
+        &_1
+          & .offer-content_block
+            &_img
+              width: 226px
+              height: 155px
+              margin-bottom: 37px
+        &_2
+          & .offer-content_block
+            &_img
+              width: 200px
+              height: 165px
+              margin-bottom: 30px
+        &_3
+          & .offer-content_block
+            &_img
+              width: 146px
+              height: 147px
+              margin-bottom: 39px
+        &_4
+          & .offer-content_block
+            &_img
+              width: 268px
+              height: 178px
+              margin-top: 6px
+              margin-left: -15px
+              margin-bottom: 27px
+        &_wrraper
+          &_title
+            margin-bottom: 22px
+            font-family: "CeraPro-Bold"
+            font-size: 20px
+            font-weight: 700
+          &_ul
+            margin: 0
+          &_li
+            font-family: "CeraPro-Regular"
+            font-size: 12px !important
+            font-weight: 400
+            &:after
+              top: -1px
+          &_btnblock
+            left: auto
+            bottom: auto
+            position: static
+            flex-direction: column
+            align-items: center
+            margin-top: 31px
+            margin-bottom: 22px
+          &_btn
+            width: 165px
+            height: 35px
+            font-size: 16px
+            &_2
+              margin-top: 13px
+              margin-left: 0
+.offer-content_block_wrraper_btn:active
+  background-color: #789c12
+// /OFFER-----------------------------------------
+
+// JOBS-----------------------------------------
+.jobs
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 84px 0 64px 0
+  &-title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 27px
+  &-wrapper
+    width: 1140px
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: wrap
+  &-item
+    width: 360px
+    height: 105px
+    border: 1px solid #d1d1d1
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    border-radius: 5px
+    &_img
+      display: inline-block
+      width: 80px
+      height: 80px
+      margin-right: 20px
+      margin-left: 10px
+    &_text
+      display: inline-block
+      &_name
+        margin-bottom: 8px
+        color: #262626
+        font-family: "CeraPro-Bold"
+        font-size: 20px
+        font-weight: 700
+        text-align: left
+      &_text
+        padding-left: 22px
+        color: #999999
+        font-family: "CeraPro-Regular"
+        font-size: 16px
+        font-weight: 400
+        text-align: left
+        position: relative
+        &:after
+          position: absolute
+          content: ""
+          background: url('../../img/index/jobs/padlock.svg') center no-repeat
+          background-size: 15px 21px
+          width: 15px
+          height: 21px
+          left: 0
+          top: -2px
+@media screen and (max-width: 1200px)
+  .jobs
+    &-wrapper
+      width: 750px
+@media screen and (max-width: 850px)
+  .jobs
+    &-wrapper
+      width: 360px
+@media screen and (max-width: 575px)
+  .jobs
+    padding: 50px 0 37px 0
+    &-title
+      font-size: 20px
+    &-wrapper
+      width: 290px
+    &-item
+      width: 290px
+      height: 85px
+      margin-bottom: 13px
+      &_img
+        width: 55px
+        height: 55px
+        margin-left: 13px
+        margin-right: 9px
+      &_text
+        &_name
+          font-size: 16px
+          margin-bottom: 5px
+        &_text
+          font-size: 14px
+          padding-left: 18px
+          &:after
+            top: 0px
+            width: 12px
+            height: 16px
+            background-size: 12px 16px
+
+// /JOBS-----------------------------------------
+
+// PRICE-----------------------------------------
+
+.price
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  padding-bottom: 85px
+  &-title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 20px
+  &-nav
+    width: 1140px
+    margin-bottom: 37px
+    &_item
+      color: #262626
+      font-family: "CeraPro-Regular"
+      font-size: 15px
+      font-weight: 400
+      text-align: center
+      display: inline-block
+      padding: 4px 20px 4px 20px
+      border: 2px solid #c6c6c6
+      margin-right: 14px
+      border-radius: 35px
+      &_2
+        & span:last-child
+          display: none
+  &-block
+    width: 1140px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    &_1
+      // display: none
+    &_2
+      // display: none
+    &_3
+      // display: none
+      & .price-block_item
+        height: 500px
+    &_4
+      // display: none
+      & .price-block_item
+        height: 515px
+    &_5
+      // display: none
+      & .price-block_item
+        height: 444px
+      & .price-block_ul
+        margin-top: 15px
+    &_title
+      width: 100%
+      margin-bottom: 31px
+      color: #262626
+      font-family: "CeraPro-Bold"
+      font-size: 28px
+      font-weight: 700
+      text-align: center
+    &_item
+      width: 360px
+      border-radius: 10px
+      box-shadow: -1px 3px 10px 2px rgba(44, 43, 44, 0.07)
+      border: 1px solid #a5d812
+      background-color: #ffffff
+      position: relative
+      height: 416px
+    &_upper
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+      width: 100%
+      height: 122px
+      box-shadow: -1px 3px 10px 2px rgba(44, 43, 44, 0.07)
+      background-color: #121b3a
+      display: flex
+      justify-content: center
+      flex-direction: column
+      &_title
+        margin-left: 35px
+        margin-bottom: 10px
+        color: #ffffff
+        font-family: "CeraPro-Black"
+        font-size: 24px
+        font-weight: 400
+        text-align: left
+      &_price
+        margin-left: 35px
+        color: #a5d812
+        font-family: "CeraPro-Bold"
+        font-size: 24px
+        font-weight: 700
+        text-align: left
+    &_ul
+      list-style: none
+      padding-left: 62px
+      margin-top: 29px
+      margin-bottom: 0
+      &_title
+        padding-left: 35px
+        margin-top: 31px
+        color: #262626
+        font-family: "CeraPro-Regular"
+        font-size: 16px
+        font-weight: 400
+        text-align: left
+    &_li
+      margin-bottom: 8px
+      color: #262626
+      font-family: "CeraPro-Regular"
+      font-size: 16px
+      font-weight: 400
+      text-align: left
+      position: relative
+      max-width: 260px
+      &:after
+        position: absolute
+        content: ""
+        background: url('../../img/index/check-circle.svg') center no-repeat
+        background-size: 20px 20px
+        width: 20px
+        height: 20px
+        top: 0
+        left: -27px
+      &:last-child
+        margin-bottom: 0
+    &_btn
+      position: absolute
+      bottom: 32px
+      left: 34px
+      width: 175px
+      height: 40px
+      background-color: #a5d812
+      color: #ffffff
+      font-family: "CeraPro-Bold"
+      font-size: 18px
+      font-weight: 700
+      text-align: center
+      border-radius: 35px
+  & button
+    outline: none
+    border: none
+
+@media screen and (min-width: 992px)
+  .price-block_btn:hover
+    cursor: pointer
+    background-color: #9ab54b
+.price-block_btn:active
+  background-color: #789c12
+
+@media screen and (max-width: 1152px)
+  .price-nav
+    margin-bottom: 17px
+@media screen and (max-width: 1200px)
+  .price
+    &-nav
+      width: 85%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      &_item
+        margin-bottom: 20px
+    &-block
+      width: 755px
+      justify-content: center
+      &_item
+        &_1
+          margin-right: 30px
+        &_3
+          margin-top: 30px
+@media screen and (max-width: 820px)
+  .price
+    &-block
+      width: 360px
+      justify-content: center
+      &_item
+        margin: 0
+        &_2, &_3
+          margin-top: 40px
+@media screen and (max-width: 575px)
+  .price
+    padding-bottom: 50px
+    &-title
+      font-size: 20px
+      margin-bottom: 17px
+    &-nav
+      margin-bottom: 17px
+      justify-content: start
+      width: 90%
+      &_item
+        font-size: 10px
+        padding: 4px 10px 4px 10px
+        min-width: 100px
+        margin-bottom: 8px
+        margin-right: 8px
+        &_2
+          & span:first-child
+            display: none
+          & span:last-child
+            display: inline-block
+        &_4
+          order: 5
+    &-block
+      width: 100%
+      &_item
+        width: 290px
+        height: 365px
+        margin-top: 16px
+        &_1
+          margin-top: 0
+      &_1
+      // display: none
+      &_2
+      // display: none
+      &_3
+        & .price-block_item
+          height: 365px
+        & .price-block_item_2
+          height: 450px
+      &_4
+        & .price-block_item
+          height: 365px
+        & .price-block_item_1
+          height: 415px
+      &_5
+        & .price-block_item
+          height: 365px !important
+        & .price-block_ul
+          margin-top: 15px
+          &_title
+            color: #262626
+            font-family: "CeraPro-Medium"
+            font-size: 12px
+            font-weight: 500
+            text-align: left
+            margin-top: 26px
+            padding-left: 24px
+      &_title
+        font-size: 18px
+        margin-bottom: 15px
+      &_upper
+        align-items: center
+        height: 90px
+        &_title
+          font-size: 20px
+          margin-left: 0
+        &_price
+          font-size: 18px
+          margin-left: 0
+      &_ul
+        margin-top: 26px
+        padding-left: 50px
+      &_li
+        font-size: 12px
+        margin-bottom: 12px
+        max-width: 200px
+        &:after
+          top: -1px
+      &_btn
+        width: 165px
+        height: 35px
+        left: 50%
+        transform: translateX(-50%)
+.price-block
+  display: none
+.price-block_1
+  display: flex
+.pricenone
+  display: none
+.priceflex
+  display: flex
+
+@media screen and (min-width: 1200px)
+  .price-nav_item:hover
+    cursor: pointer
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 15px
+    font-weight: 700
+    border: 2px solid #a5d812
+.pricenavactive
+  color: #262626
+  font-family: "CeraPro-Bold"
+  font-size: 15px
+  font-weight: 700
+  border: 2px solid #a5d812
+// /PRICE-----------------------------------------
+
+.jenya
+  display: flex
+  position: absolute

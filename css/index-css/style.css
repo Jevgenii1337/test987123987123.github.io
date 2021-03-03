@@ -1,0 +1,1357 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.overflowh {
+  overflow: hidden;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.main {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.main-slider {
+  position: relative;
+}
+
+.main-slider_slide {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  background-size: 2102px 540px;
+}
+
+.main-slider_slide_1 {
+  background-color: #121b3a;
+}
+
+.main-slider_slide_1 .main-slider_slide_part_1 {
+  position: relative;
+}
+
+.main-slider_slide_1 .main-slider_slide_part_1 img {
+  position: absolute;
+  left: 70px;
+  top: 42px;
+}
+
+.main-slider_slide_1 .main-slider_slide_part_2 {
+  width: 653px;
+  padding: 88px 0 108px 0;
+}
+
+.main-slider_slide_1 .main-slider_li:nth-child(2) {
+  max-width: 460px;
+}
+
+.main-slider_slide_1 .main-slider_li:nth-child(3) {
+  max-width: 510px;
+}
+
+.main-slider_slide_2 {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.main-slider_slide_2 .main-slider_title {
+  color: #000;
+}
+
+.main-slider_slide_2 .main-slider_li {
+  color: #000;
+  font-size: 18px;
+}
+
+.main-slider_slide_2 .main-slider_slide_part_1 {
+  position: relative;
+}
+
+.main-slider_slide_2 .main-slider_slide_part_1 img {
+  position: absolute;
+  left: -180px;
+  top: 49px;
+}
+
+.main-slider_slide_2 .main-slider_slide_part_2 {
+  width: 544px;
+  padding: 50px 0 176px 0;
+}
+
+.main-slider_slide_wrraper {
+  width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-slider_slide_part {
+  display: inline-block;
+  height: auto;
+}
+
+.main-slider_slide_part_2 {
+  vertical-align: top;
+}
+
+.main-slider_title {
+  color: #ffffff;
+  font-family: "CeraPro-Bold";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-slider_ul {
+  color: #ffffff;
+  margin: 33px 0 48px 0;
+  padding-left: 30px;
+  list-style: none;
+  font-family: "CeraPro-Regular";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-slider_li {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.main-slider_li:after {
+  position: absolute;
+  top: 3px;
+  left: -31px;
+  content: url("../../img/general/check.png");
+  background-size: 21px 21px;
+  width: 21px;
+  height: 21px;
+}
+
+.main-slider_li:last-child {
+  margin-bottom: 0;
+}
+
+.main-slider_btn {
+  width: 175px;
+  height: 40px;
+  background-color: #a5d812;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "CeraPro-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.main .slick-slider {
+  margin-bottom: 0;
+}
+
+.main .slick-arrow {
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  background-size: 45px 45px;
+  left: 50%;
+  top: 50%;
+}
+
+.main .slick-prev {
+  background: url("../../img/index/left.png") center no-repeat;
+  -webkit-transform: translate(-1315%, -50%);
+          transform: translate(-1315%, -50%);
+}
+
+.main .slick-prev:before {
+  display: none;
+}
+
+.main .slick-next {
+  background: url("../../img/index/right.png") center no-repeat;
+  -webkit-transform: translate(1215%, -50%);
+          transform: translate(1215%, -50%);
+}
+
+.main .slick-next:before {
+  display: none;
+}
+
+.main .slick-dots {
+  bottom: 20px;
+}
+
+.main .slick-dots li {
+  width: 45px;
+  height: 4px;
+}
+
+.main .slick-dots li button {
+  width: 45px;
+  height: 4px;
+  background-color: #aeaeae;
+  opacity: 0.75;
+  border-radius: 15px;
+  font-size: medium;
+  line-height: normal;
+  padding: 0;
+}
+
+.main .slick-dots li button:before {
+  display: none;
+}
+
+.main .slick-dots li.slick-active button {
+  background-color: #a5d812;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1199px) {
+  .main-slider_slide_1 .main-slider_slide_part_2 {
+    padding: 50px 0 120px 0;
+  }
+  .main-slider_slide_2 .main-slider_slide_part_2 {
+    padding: 50px 0 100px 0;
+  }
+  .main-slider_slide_2 .main-slider_slide_part_2 {
+    width: 653px;
+  }
+  .main-slider_slide_wrraper {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-slider_slide_part_1 {
+    display: none;
+  }
+  .main-slider_title {
+    text-align: center;
+  }
+  .main-slider_btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .slick-arrow {
+    -webkit-transform: none;
+            transform: none;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .main .slick-prev {
+    left: 20px;
+  }
+  .main .slick-next {
+    left: auto;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-slider_slide_wrraper {
+    width: 575px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-slider_slide_1 .main-slider_slide_part_2 {
+    padding: 88px 0 73px 0;
+    width: 450px;
+  }
+  .main-slider_slide_2 .main-slider_li {
+    font-size: 16px;
+  }
+  .main-slider_slide_2 .main-slider_li:after {
+    top: 0px;
+  }
+  .main-slider_slide_2 .main-slider_slide_part_1 img {
+    left: 0;
+    top: 0;
+    width: 546px;
+    height: 350px;
+  }
+  .main-slider_slide_2 .main-slider_slide_part_2 {
+    width: 450px;
+    padding: 50px 0 67px 0;
+  }
+  .main-slider_slide_part_1 {
+    display: none;
+  }
+  .main-slider_slide_part_2 {
+    margin-right: 0;
+  }
+  .main-slider_ul {
+    font-size: 18px;
+  }
+  .main-slider_li:after {
+    top: 1px;
+    background-size: 17px 17px;
+    width: 17px;
+    height: 17px;
+  }
+  .main .slick-prev {
+    left: 0px;
+  }
+  .main .slick-next {
+    right: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-slider_btn:hover {
+    cursor: pointer;
+    background-color: #9ab54b;
+  }
+  .main .slick-dots li:not(.slick-active) button:hover {
+    background-color: #a5d812;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    width: 100%;
+    height: auto;
+  }
+  .main-slider {
+    height: auto;
+  }
+  .main-slider_slide {
+    height: auto;
+    max-height: none;
+  }
+  .main-slider_slide_wrraper {
+    width: 100%;
+  }
+  .main-slider_slide_1 {
+    background: url("../../img/index/Banner1-mob.png") center no-repeat;
+    background-size: 575px 431px;
+  }
+  .main-slider_slide_1 .main-slider_ul {
+    margin-bottom: 33px;
+  }
+  .main-slider_slide_1 .main-slider_title {
+    margin-bottom: 21px;
+  }
+  .main-slider_slide_1 .main-slider_slide_part_2 {
+    padding: 0;
+    padding-top: 47px;
+    padding-bottom: 64px;
+    width: 258px;
+    padding-left: 20px;
+    width: 268px;
+  }
+  .main-slider_slide_1 .main-slider_btn {
+    margin-left: 35px;
+  }
+  .main-slider_slide_2 {
+    background: url("../../img/index/Banner2-mob.png") center no-repeat;
+    background-size: 575px 431px;
+  }
+  .main-slider_slide_2 .main-slider_title {
+    margin-bottom: 15px;
+  }
+  .main-slider_slide_2 .main-slider_ul {
+    margin-bottom: 33px;
+  }
+  .main-slider_slide_2 .main-slider_li {
+    font-size: 13.5px;
+  }
+  .main-slider_slide_2 .main-slider_li:nth-child(2) {
+    display: none;
+  }
+  .main-slider_slide_2 .main-slider_li:after {
+    top: 0px;
+  }
+  .main-slider_slide_2 .main-slider_slide_part_2 {
+    width: 258px;
+    padding: 50px 0 83px 0;
+    padding-left: 10px;
+    width: 268px;
+  }
+  .main-slider_slide_wrraper {
+    height: auto;
+  }
+  .main-slider_title {
+    font-family: "CeraPro-Black";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+  .main-slider_ul {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 0;
+    margin: 0px 0 44px 0;
+    margin-left: 0px;
+  }
+  .main-slider_li {
+    margin-bottom: 13px;
+  }
+  .main-slider_li:after {
+    content: '';
+    background: url("../../img/general/check.png") center no-repeat;
+    background-size: 17px;
+    width: 17px;
+    height: 17px;
+    top: 0px;
+    left: -22px;
+  }
+  .main-slider_btn {
+    margin-right: 0;
+    margin-left: 40px;
+  }
+  .main .slick-list {
+    height: 430px;
+  }
+  .main .slick-arrow {
+    bottom: 20px;
+    -webkit-transform: none;
+            transform: none;
+    top: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 23px;
+    height: 23px;
+    background-size: 23px 23px;
+    right: auto;
+  }
+  .main .slick-prev {
+    -webkit-transform: translateX(-115%);
+            transform: translateX(-115%);
+    background: url(../img/index/left-mob.png) center no-repeat;
+  }
+  .main .slick-next {
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+    background: url(../img/index/right-mob.png) center no-repeat;
+  }
+}
+
+.main-slider_btn:active {
+  background-color: #789c12;
+}
+
+.offer {
+  width: 100%;
+  padding: 78px 0 87px 0;
+}
+
+.offer button {
+  outline: none;
+  border: none;
+}
+
+.offer-title {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.offer-subtitle {
+  color: #262626;
+  font-family: "CeraPro-Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.offer-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 535px;
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.offer-content {
+  margin-top: 40px;
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-content_block {
+  width: 451px;
+  height: 740px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0 50px 0 50px;
+  position: relative;
+}
+
+.offer-content_block:nth-child(-n+2) {
+  margin-bottom: 27px;
+}
+
+.offer-content_block_img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 37px;
+  margin-bottom: 50px;
+}
+
+.offer-content_block_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.offer-content_block_1 .offer-content_block_img {
+  width: 436px;
+  height: 299px;
+}
+
+.offer-content_block_2 .offer-content_block_img {
+  width: 362px;
+  height: 299px;
+}
+
+.offer-content_block_2 .offer-content_block_wrraper_li {
+  font-size: 17px;
+}
+
+.offer-content_block_3 .offer-content_block_img {
+  width: 296px;
+  height: 299px;
+}
+
+.offer-content_block_4 .offer-content_block_img {
+  margin-left: -17px;
+  width: 487px;
+  height: 324px;
+  margin-top: 13px;
+}
+
+.offer-content_block_wrraper_title {
+  margin-bottom: 27px;
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.offer-content_block_wrraper_ul {
+  padding-left: 28px;
+  list-style: none;
+}
+
+.offer-content_block_wrraper_li {
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.offer-content_block_wrraper_li:after {
+  position: absolute;
+  content: '';
+  background: url("../../img/index/check-circle.png") center no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: -28px;
+}
+
+.offer-content_block_wrraper_li:last-child {
+  margin-bottom: 0;
+}
+
+.offer-content_block_wrraper_btnblock {
+  position: absolute;
+  left: 50px;
+  bottom: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.offer-content_block_wrraper_btn {
+  width: 175px;
+  height: 40px;
+  background-color: #a5d812;
+  border-radius: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "CeraPro-Bold";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.offer-content_block_wrraper_btn_2 {
+  background-color: #c6c6c6;
+  margin-left: 21px;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer-content {
+    width: 575px;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer-content_block:nth-child(-n+3) {
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .offer-content_block_wrraper_btn:hover {
+    background-color: #9ab54b;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .offer-title {
+    font-size: 34px;
+    margin-bottom: 28px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .offer-subtitle {
+    font-size: 22.5px;
+    margin-bottom: 17px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .offer-text {
+    width: 90%;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .offer {
+    padding: 45px 0 50px 0;
+  }
+  .offer-title {
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .offer-subtitle {
+    font-family: "CeraPro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 11px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .offer-text {
+    width: 90%;
+    font-size: 14px;
+  }
+  .offer-content {
+    width: 100vw;
+    margin-top: 22px;
+  }
+  .offer-content_block {
+    padding-left: 26px;
+    padding-right: 26px;
+    max-width: 238px;
+    height: auto;
+  }
+  .offer-content_block_img {
+    margin-top: 20px;
+  }
+  .offer-content_block_1 .offer-content_block_img {
+    width: 226px;
+    height: 155px;
+    margin-bottom: 37px;
+  }
+  .offer-content_block_2 .offer-content_block_img {
+    width: 200px;
+    height: 165px;
+    margin-bottom: 30px;
+  }
+  .offer-content_block_3 .offer-content_block_img {
+    width: 146px;
+    height: 147px;
+    margin-bottom: 39px;
+  }
+  .offer-content_block_4 .offer-content_block_img {
+    width: 268px;
+    height: 178px;
+    margin-top: 6px;
+    margin-left: -15px;
+    margin-bottom: 27px;
+  }
+  .offer-content_block_wrraper_title {
+    margin-bottom: 22px;
+    font-family: "CeraPro-Bold";
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .offer-content_block_wrraper_ul {
+    margin: 0;
+  }
+  .offer-content_block_wrraper_li {
+    font-family: "CeraPro-Regular";
+    font-size: 12px !important;
+    font-weight: 400;
+  }
+  .offer-content_block_wrraper_li:after {
+    top: -1px;
+  }
+  .offer-content_block_wrraper_btnblock {
+    left: auto;
+    bottom: auto;
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 31px;
+    margin-bottom: 22px;
+  }
+  .offer-content_block_wrraper_btn {
+    width: 165px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .offer-content_block_wrraper_btn_2 {
+    margin-top: 13px;
+    margin-left: 0;
+  }
+}
+
+.offer-content_block_wrraper_btn:active {
+  background-color: #789c12;
+}
+
+.jobs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 84px 0 64px 0;
+}
+
+.jobs-title {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.jobs-wrapper {
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jobs-item {
+  width: 360px;
+  height: 105px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.jobs-item_img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.jobs-item_text {
+  display: inline-block;
+}
+
+.jobs-item_text_name {
+  margin-bottom: 8px;
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.jobs-item_text_text {
+  padding-left: 22px;
+  color: #999999;
+  font-family: "CeraPro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+}
+
+.jobs-item_text_text:after {
+  position: absolute;
+  content: "";
+  background: url("../../img/index/jobs/padlock.svg") center no-repeat;
+  background-size: 15px 21px;
+  width: 15px;
+  height: 21px;
+  left: 0;
+  top: -2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .jobs-wrapper {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .jobs-wrapper {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .jobs {
+    padding: 50px 0 37px 0;
+  }
+  .jobs-title {
+    font-size: 20px;
+  }
+  .jobs-wrapper {
+    width: 290px;
+  }
+  .jobs-item {
+    width: 290px;
+    height: 85px;
+    margin-bottom: 13px;
+  }
+  .jobs-item_img {
+    width: 55px;
+    height: 55px;
+    margin-left: 13px;
+    margin-right: 9px;
+  }
+  .jobs-item_text_name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .jobs-item_text_text {
+    font-size: 14px;
+    padding-left: 18px;
+  }
+  .jobs-item_text_text:after {
+    top: 0px;
+    width: 12px;
+    height: 16px;
+    background-size: 12px 16px;
+  }
+}
+
+.price {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 85px;
+}
+
+.price-title {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.price-nav {
+  width: 1140px;
+  margin-bottom: 37px;
+}
+
+.price-nav_item {
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  padding: 4px 20px 4px 20px;
+  border: 2px solid #c6c6c6;
+  margin-right: 14px;
+  border-radius: 35px;
+}
+
+.price-nav_item_2 span:last-child {
+  display: none;
+}
+
+.price-block {
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-block_3 .price-block_item {
+  height: 500px;
+}
+
+.price-block_4 .price-block_item {
+  height: 515px;
+}
+
+.price-block_5 .price-block_item {
+  height: 444px;
+}
+
+.price-block_5 .price-block_ul {
+  margin-top: 15px;
+}
+
+.price-block_title {
+  width: 100%;
+  margin-bottom: 31px;
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.price-block_item {
+  width: 360px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 3px 10px 2px rgba(44, 43, 44, 0.07);
+          box-shadow: -1px 3px 10px 2px rgba(44, 43, 44, 0.07);
+  border: 1px solid #a5d812;
+  background-color: #ffffff;
+  position: relative;
+  height: 416px;
+}
+
+.price-block_upper {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 122px;
+  -webkit-box-shadow: -1px 3px 10px 2px rgba(44, 43, 44, 0.07);
+          box-shadow: -1px 3px 10px 2px rgba(44, 43, 44, 0.07);
+  background-color: #121b3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-block_upper_title {
+  margin-left: 35px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: "CeraPro-Black";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.price-block_upper_price {
+  margin-left: 35px;
+  color: #a5d812;
+  font-family: "CeraPro-Bold";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.price-block_ul {
+  list-style: none;
+  padding-left: 62px;
+  margin-top: 29px;
+  margin-bottom: 0;
+}
+
+.price-block_ul_title {
+  padding-left: 35px;
+  margin-top: 31px;
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.price-block_li {
+  margin-bottom: 8px;
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  max-width: 260px;
+}
+
+.price-block_li:after {
+  position: absolute;
+  content: "";
+  background: url("../../img/index/check-circle.svg") center no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -27px;
+}
+
+.price-block_li:last-child {
+  margin-bottom: 0;
+}
+
+.price-block_btn {
+  position: absolute;
+  bottom: 32px;
+  left: 34px;
+  width: 175px;
+  height: 40px;
+  background-color: #a5d812;
+  color: #ffffff;
+  font-family: "CeraPro-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 35px;
+}
+
+.price button {
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 992px) {
+  .price-block_btn:hover {
+    cursor: pointer;
+    background-color: #9ab54b;
+  }
+}
+
+.price-block_btn:active {
+  background-color: #789c12;
+}
+
+@media screen and (max-width: 1152px) {
+  .price-nav {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .price-nav {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-nav_item {
+    margin-bottom: 20px;
+  }
+  .price-block {
+    width: 755px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block_item_1 {
+    margin-right: 30px;
+  }
+  .price-block_item_3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .price-block {
+    width: 360px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block_item {
+    margin: 0;
+  }
+  .price-block_item_2, .price-block_item_3 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .price {
+    padding-bottom: 50px;
+  }
+  .price-title {
+    font-size: 20px;
+    margin-bottom: 17px;
+  }
+  .price-nav {
+    margin-bottom: 17px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 90%;
+  }
+  .price-nav_item {
+    font-size: 10px;
+    padding: 4px 10px 4px 10px;
+    min-width: 100px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+  .price-nav_item_2 span:first-child {
+    display: none;
+  }
+  .price-nav_item_2 span:last-child {
+    display: inline-block;
+  }
+  .price-nav_item_4 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .price-block {
+    width: 100%;
+  }
+  .price-block_item {
+    width: 290px;
+    height: 365px;
+    margin-top: 16px;
+  }
+  .price-block_item_1 {
+    margin-top: 0;
+  }
+  .price-block_3 .price-block_item {
+    height: 365px;
+  }
+  .price-block_3 .price-block_item_2 {
+    height: 450px;
+  }
+  .price-block_4 .price-block_item {
+    height: 365px;
+  }
+  .price-block_4 .price-block_item_1 {
+    height: 415px;
+  }
+  .price-block_5 .price-block_item {
+    height: 365px !important;
+  }
+  .price-block_5 .price-block_ul {
+    margin-top: 15px;
+  }
+  .price-block_5 .price-block_ul_title {
+    color: #262626;
+    font-family: "CeraPro-Medium";
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 26px;
+    padding-left: 24px;
+  }
+  .price-block_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .price-block_upper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90px;
+  }
+  .price-block_upper_title {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .price-block_upper_price {
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .price-block_ul {
+    margin-top: 26px;
+    padding-left: 50px;
+  }
+  .price-block_li {
+    font-size: 12px;
+    margin-bottom: 12px;
+    max-width: 200px;
+  }
+  .price-block_li:after {
+    top: -1px;
+  }
+  .price-block_btn {
+    width: 165px;
+    height: 35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.price-block {
+  display: none;
+}
+
+.price-block_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricenone {
+  display: none;
+}
+
+.priceflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .price-nav_item:hover {
+    cursor: pointer;
+    color: #262626;
+    font-family: "CeraPro-Bold";
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid #a5d812;
+  }
+}
+
+.pricenavactive {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 15px;
+  font-weight: 700;
+  border: 2px solid #a5d812;
+}
+
+.jenya {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
