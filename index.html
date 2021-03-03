@@ -80,17 +80,17 @@
         <li class="header-bar_li header-bar_li_spec">Удостоверяющий центр
           <div class="header-bar_li_more"></div>
           <ul class="header-bar_in_ul">
-            <li class="header-bar_in_li"><a href="certifying-center.html/#1">О центре</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#2">Информация об ЭЦП</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#3">Заказать ЭЦП</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#4">Учебный центр</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#5">Документация </a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#6">Сертификаты</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#7">Инструкции</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#8">О программном обеспечении</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#9">Партнеры</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#10">Участие в тендерах</a></li>
-            <li class="header-bar_in_li"><a href="certifying-center.html/#11">Контакты</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=1">О центре</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=2">Информация об ЭЦП</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=3">Заказать ЭЦП</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=4">Учебный центр</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=5">Документация </a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=6">Сертификаты</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=7">Инструкции</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=8">О программном обеспечении</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=9">Партнеры</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=10">Участие в тендерах</a></li>
+            <li class="header-bar_in_li"><a href="certifying-center.html?id=11">Контакты</a></li>
           </ul>
         </li>
         <li class="header-bar_li"><a href="mail-service.html">Почтовые службы</a></li>
@@ -1459,47 +1459,19 @@
 
   <!-- URL -->
   <script>
-   
-    
-    // function $_GET(key) {
-    //   var s = window.location.search;
-    //   s = s.match(new RegExp(key + '=([^&=]+)'));
-    //   return s ? s[1] : false;
-    // }
-
-    // $(document).ready(function() {
-    //     if($_GET['opendiv'] == 'first') {
-    //       $( '.project-slider' ).slick('slickGoTo', 0, false);
-    //     } else if($_GET['opendiv'] == 'second') {
-    //       $( '.project-slider' ).slick('slickGoTo', 4, false);
-
-    //     }
-    // });
-
-    // $(".project__slider_nav-item").on("click", (function(e){ e.preventDefault(); var slideIndex = $(this).index();
-    //    console.log(slideIndex); $( '.project__slider_for' ).slick('slickGoTo', slideIndex, false); }));
-
+    var id = getUrlVars()["id"];
+    var page = getUrlVars()["page"];
+    if (id == 1) {
+      $('.header').hide()
+    }
+    function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+    }
   </script>
-<!-- onload="lol()" -->
-<!-- <script>
-  function lol(){
-    var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-    if(hash === "first") {
-      // const el = document.getElementById('project');
-      // el.scrollIntoView();
-      // scrollTop: $(".project").offset().top
-    // alert ("works");
-    // alert (window.location.hash);
-    // hash found
-    var topPos = document.getElementById('project').offsetTop;
-    console.log(topPos)
-    document.getElementById('body').scrollTop = topPos-10;
-    } else {
-    alert ("no hash");
-    // No hash found
-}
-  }
-</script> -->
   <!-- /URL -->
 </body>
 </html>

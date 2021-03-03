@@ -20,8 +20,6 @@ body
   display: flex
   flex-direction: column
   align-items: center
-  background-color: rgba(237, 243, 245, 0.5)
-
 // MAIL-SERVICE
 
 .mail-service
@@ -70,6 +68,7 @@ body
     &_3
       margin-top: 24px
 .mail-advatage
+  background-color: rgba(237, 243, 245, 0.5)
   padding: 80px 0 80px 0
   width: 100%
   display: flex
@@ -114,6 +113,58 @@ body
       font-size: 18px
       font-weight: 400
       text-align: left
+.mail-other
+  width: 1140px
+  display: flex
+  flex-direction: column
+  // align-items: center
+  padding: 91px 0 76px 0
+  &_title
+    color: #262626
+    font-family: "CeraPro-Bold"
+    font-size: 33px
+    font-weight: 700
+    text-align: left
+    margin-bottom: 65px
+  &_text
+    color: #262626
+    font-family: "CeraPro-Regular"
+    font-size: 18px
+    font-weight: 400
+    text-align: left
+    margin-top: 20px
+    &_1
+      margin-top: 32px
+      width: 882px
+    &_2
+      width: 1081px
+    &_3
+      width: 1119px
+    &_4
+      width: 1040px
+    &_5
+      width: 919px
+  &_block
+    width: 1086px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &_item
+      width: 232px
+      color: #262626
+      font-family: "CeraPro-Regular"
+      font-size: 18px
+      font-weight: 400
+      text-align: left
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        top: -13px
+        left: 0
+        width: 35px
+        height: 4px
+        background-color: #8bd900
 @media screen and (max-width: 1200px)
   .mail-advatage
     &_title
@@ -130,7 +181,27 @@ body
         margin-top: 31px
   .mail-service
     width: 90%
+  .mail-other
+    width: 90%
+    &_title
+      width: 100%
+    &_block
+      width: 100%
+      &_item
+        &_1
+          margin-bottom: 70px
+          margin-right: 40px
+        &_3
+          order: 4
+        &_4
+          order: 3
+          margin-right: 40px
+    &_text
+      width: 100%
 @media screen and (max-width: 575px)
+  .mail
+    background-color: rgba(237, 243, 245, 0.5)
+    margin-bottom: 25px
   .mail-service
     padding-top: 37px
     padding-bottom: 27px
@@ -174,5 +245,46 @@ body
         margin-bottom: 8px
       &_text
         font-size: 14px
+  .mail-other
+    padding: 42px 0 25px 0
+    &_title
+      font-size: 18px
+      margin-bottom: 43px
+    &_block
+      margin-bottom: 30px
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      &_item
+        font-size: 14px
+        width: 100%
+        margin-bottom: 40px
+        &_1
+          margin-right: 0
+        &_3
+          order: 3
+        &_4
+          order: 4
+          margin-right: 0
+          margin-bottom: 0
+    &_text
+      margin-top: 23px
+      font-size: 14px
+      &_1
+        margin-top: 0
+// @media screen and (max-width: 559px)
+//   .mail-other
+//     &_block
+
+//       &_item
+
+//         &_1
+
+//         &_3
+//           order: 3
+//         &_4
+//           order: 4
+//           margin-right: 0
+//           margin-bottom: 0
 
 // /MAIL-SERVICE
