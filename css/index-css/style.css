@@ -1349,6 +1349,73 @@ body {
   border: 2px solid #a5d812;
 }
 
+.banners {
+  width: 1140px;
+  padding: 40px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banners-block {
+  width: 370px;
+  height: 50px;
+  background-color: #d1d1d1;
+}
+
+.banners-block_1 {
+  margin-right: 15px;
+}
+
+.banners-block_2 {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banners-block {
+    margin-bottom: 15px;
+  }
+  .banners-block_1 {
+    margin-left: 15px;
+  }
+  .banners-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .banners {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banners-block {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .banners-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .banners {
+    display: none;
+  }
+}
+
 .jenya {
   display: -webkit-box;
   display: -ms-flexbox;

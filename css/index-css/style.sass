@@ -1009,6 +1009,42 @@ body
   border: 2px solid #a5d812
 // /PRICE-----------------------------------------
 
+.banners
+  width: 1140px
+  padding: 40px 0px 40px 0px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  &-block
+    width: 370px
+    height: 50px
+    background-color: #d1d1d1
+    &_1
+      margin-right: 15px
+    &_2
+      margin-right: 15px
+@media screen and (max-width: 1200px)
+  .banners
+    &-block
+      margin-bottom: 15px
+      &_1
+        margin-left: 15px
+      &:last-child
+        margin-bottom: 0
+@media screen and (max-width: 784px)
+  .banners
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    &-block
+      margin: 0
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+@media screen and (max-width: 575px)
+  .banners
+    display: none
+
 .jenya
   display: flex
   position: absolute

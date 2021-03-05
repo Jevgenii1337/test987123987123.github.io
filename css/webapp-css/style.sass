@@ -76,6 +76,8 @@ body
     text-align: left
     max-width: 1005px
     margin-bottom: 40px
+    &_2
+      display: none
   &-block
     display: flex
     flex-direction: row
@@ -118,8 +120,15 @@ body
     &-inner
     &-title
       font-size: 14px
+      // text-align: left
+      &:first-child
+        display: none
+      &_2
+        display: inline-block
     &-block
+      // justify-content: flex-start
       &_item
+        width: 90%
         font-size: 14px
         &:nth-child(-n+7)
           margin-bottom: 37px
@@ -253,3 +262,7 @@ body
     & .type-block_img_1
       display: inline-block
 // /MAIN2
+@media screen and (min-width: 1201px)
+  .type-block_inner_600
+    width: 596px
+    & .type-block_title

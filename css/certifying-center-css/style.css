@@ -1,0 +1,103 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.overflowh {
+  overflow: hidden;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.nav {
+  padding: 64px 0 64px 0;
+}
+
+.nav-title {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.nav-block {
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-block_item {
+  width: 262px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 7px;
+  border: 2px solid #c6c6c6;
+  margin-bottom: 15px;
+}
+
+.nav-block_item_9 {
+  margin-bottom: 0;
+}
+
+.nav-block_item_10 {
+  margin-bottom: 0;
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.nav-block_item_img {
+  margin-right: 7px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-block_item:hover {
+    border: 2px solid #a5d812;
+    color: #262626;
+    font-family: "CeraPro-Bold";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+  }
+}
+
+.page-title {
+  color: #a5d812;
+  font-family: "CeraPro-Bold";
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 41px;
+}

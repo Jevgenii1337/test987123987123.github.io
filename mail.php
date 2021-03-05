@@ -63,7 +63,7 @@ if ($_POST['who'] == 'robot') {
     //     $question = $_POST['message'];
     // } else {
     //     $message = 'Доп. информация';
-    // };
+    };
 
     $mess = '
     Отправитель: ' . $name . '
@@ -75,7 +75,7 @@ if ($_POST['who'] == 'robot') {
     $headers = "From: $email\r\nReply-To: $email" . "\r\n" . "MIME-Version: 1.0\r\nContent-type: text/plain; charset=utf-8";
 
     mail('адрес_доставки_писем', 'Форма обратной связи', $mess, $headers);
-    header('Refresh: 5; URL=localhost/new-project');
+    header('Refresh: 5; URL=web.html');
     echo ('<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     <body><h1>Ваше сообщение отправлено!</h1>
@@ -83,7 +83,7 @@ if ($_POST['who'] == 'robot') {
     Через 5 секунд вы вернетесь на главную страницу.</body>');
     $title = 'Сообщение отправелно';
 } else {
-    header('Refresh: 5; URL=localhost/new-project');
+    header('Refresh: 5; URL=index.html');
     echo ('<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     <body><h1 class="red">Ошибка отправки сообщения!</h1><p>Проверьте правильность заполненных данных.<br>

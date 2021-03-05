@@ -117,6 +117,10 @@ body {
   margin-bottom: 40px;
 }
 
+.box-title_2 {
+  display: none;
+}
+
 .box-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,7 +188,14 @@ body {
   .box-title {
     font-size: 14px;
   }
+  .box-title:first-child {
+    display: none;
+  }
+  .box-title_2 {
+    display: inline-block;
+  }
   .box-block_item {
+    width: 90%;
     font-size: 14px;
   }
   .box-block_item:nth-child(-n+7) {
@@ -382,5 +393,11 @@ body {
   }
   .main2 .type-block_img_1 {
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .type-block_inner_600 {
+    width: 596px;
   }
 }

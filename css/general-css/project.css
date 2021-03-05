@@ -771,3 +771,9 @@
 .project-slide_btn:active {
   background-color: #789c12;
 }
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .project-slide .project-slide_img {
+    max-width: 400px;
+  }
+}

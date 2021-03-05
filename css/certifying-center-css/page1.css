@@ -1,0 +1,245 @@
+.page {
+  width: 100%;
+}
+
+.page1 .type-block_page1-1 {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page1 .type-block_page1-1 .type-block_inner {
+  width: auto;
+}
+
+.page1 .type-block_page1-1 .type-block_text:first-child {
+  width: 747px;
+}
+
+.page1 .type-block_page1-1 .type-block_text:last-child {
+  width: 718px;
+}
+
+.page1 .type-block_page1-1 .type-block_img {
+  margin-right: 79px;
+}
+
+.total {
+  padding: 46px 0 46px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #edf3f5;
+}
+
+.total-wrapper {
+  width: 1140px;
+}
+
+.total-title {
+  max-width: 810px;
+  color: #262626;
+  font-family: "CeraPro-Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.total-text {
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.total-text_1 {
+  max-width: 929px;
+  margin-bottom: 26px;
+}
+
+.total-text_2 {
+  max-width: 1057px;
+  margin-bottom: 38px;
+}
+
+.total-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.total-block_item {
+  max-width: 350px;
+  width: auto;
+  position: relative;
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.total-block_item:after {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 0;
+  width: 35px;
+  height: 3px;
+  background-color: #a5d812;
+}
+
+.total-block_item_4, .total-block_item_5 {
+  margin-bottom: 0;
+}
+
+.total-block_item:last-child {
+  margin-left: 45px;
+  margin-right: auto;
+}
+
+.total-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 41px;
+}
+
+.total-2_wrapper {
+  width: 1140px;
+}
+
+.total-2_text {
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.total-2_text:nth-child(1) {
+  margin-bottom: 28px;
+}
+
+.total-2_text:nth-child(2) {
+  margin-bottom: 37px;
+}
+
+.type-block_page1-2 {
+  padding: 65px 0 65px 0;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.type-block_page1-2 .type-block_inner {
+  width: auto;
+}
+
+.type-block_page1-2 .type-block_img {
+  margin-right: 28px;
+}
+
+.type-block_page1-2 .type-block_btn {
+  margin-top: 33px;
+  width: 183px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #a5d812;
+  color: #ffffff;
+  font-family: "CeraPro-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.page1-list {
+  padding: 71px 0 81px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #edf3f5;
+}
+
+.page1-list_wrapper {
+  width: 1140px;
+}
+
+.page1-list_title {
+  color: #262626;
+  font-family: "CeraPro-Bold";
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  max-width: 779px;
+  margin-bottom: 43px;
+}
+
+.page1-list_ul {
+  margin: 0;
+  max-width: 504px;
+  display: inline-block;
+  padding-left: 30px;
+  vertical-align: top;
+}
+
+.page1-list_ul_1 {
+  margin-right: 68px;
+}
+
+.page1-list_li {
+  margin-bottom: 15px;
+  position: relative;
+  color: #262626;
+  font-family: "CeraPro-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.page1-list_li:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -28px;
+  background: url("../../img/certifying-center/mark.png") center no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.page1-list_li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .type-block_page1-2 .type-block_btn:hover {
+    cursor: pointer;
+    background-color: #9ab54b;
+  }
+}
+
+.type-block_page1-2 .type-block_btn:active {
+  background-color: #789c12;
+}
